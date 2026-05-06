@@ -1,0 +1,275 @@
+/* ── Section ──────────────────────────────────────────── */
+
+.treks-section {
+  padding: 8rem 0;
+  background-color: #0a0a0a;
+}
+
+.treks-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+
+.treks-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.treks-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.treks-eyebrow-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #c9a84c;
+}
+
+.treks-line {
+  display: block;
+  height: 1px;
+  width: 3rem;
+  background-color: #c9a84c;
+}
+
+.treks-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 300;
+  color: #f5f0e8;
+  margin: 0 0 1.5rem;
+  line-height: 1.1;
+}
+
+.treks-gold {
+  background: linear-gradient(135deg, #c9a84c 0%, #e8c97a 50%, #9a7a30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+}
+
+.treks-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(245, 240, 232, 0.5);
+  letter-spacing: 0.05em;
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Grid ─────────────────────────────────────────────── */
+
+.treks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .treks-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Card ─────────────────────────────────────────────── */
+
+.trek-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.trek-card:hover {
+  transform: translateY(-8px);
+}
+
+.trek-card-inner {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.trek-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.trek-card:hover .trek-card-img {
+  transform: scale(1.1);
+}
+
+.trek-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.5) 50%,
+    rgba(10, 10, 10, 0.1) 100%
+  );
+}
+
+/* ── Badge ────────────────────────────────────────────── */
+
+.trek-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background-color: #c9a84c;
+  color: #000;
+  padding: 0.375rem 0.75rem;
+  font-weight: 600;
+}
+
+/* ── Price ────────────────────────────────────────────── */
+
+.trek-price {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  color: #c9a84c;
+}
+
+/* ── Content ──────────────────────────────────────────── */
+
+.trek-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.trek-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin: 0 0 0.5rem;
+}
+
+.trek-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: #f5f0e8;
+  margin: 0 0 0.75rem;
+}
+
+.trek-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(245, 240, 232, 0.6);
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  max-width: 28rem;
+}
+
+/* ── Meta ─────────────────────────────────────────────── */
+
+.trek-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.trek-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(245, 240, 232, 0.6);
+}
+
+.trek-difficulty {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+}
+
+.difficulty-moderate     { color: #34d399; }
+.difficulty-moderate-hard { color: #facc15; }
+.difficulty-hard         { color: #fb923c; }
+
+/* ── CTA ──────────────────────────────────────────────── */
+
+.trek-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #c9a84c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  transition: gap 0.3s ease;
+}
+
+.trek-card:hover .trek-cta {
+  gap: 1rem;
+}
+
+.trek-arrow {
+  transition: transform 0.3s ease;
+}
+
+/* ── View All ─────────────────────────────────────────── */
+
+.treks-view-all {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.treks-view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 3rem;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  color: #c9a84c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.treks-view-all-btn:hover {
+  background-color: #c9a84c;
+  color: #000;
+}
+
+/* ── Fade-up animation ────────────────────────────────── */
+
+.treks-fade-up {
+  opacity: 0;
+  animation: treksFadeUp 0.8s ease forwards;
+}
+
+@keyframes treksFadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

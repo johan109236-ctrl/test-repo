@@ -1,0 +1,75 @@
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.why-us .box .card-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+}
+
+.why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255,255,255,0.8);
+}
+
+.why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.why-us .box:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.18);
+}
+
+.why-us .box:hover .card-number,
+.why-us .box:hover h4,
+.why-us .box:hover p {
+    color: #fff;
+}
+
+.why-us .box ul.points-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.why-us .box ul.points-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.why-us .box ul.points-list li i {
+    color: #cda45e;
+    font-size: 16px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.why-us .box:hover ul.points-list li {
+    color: #fff;
+}
+
+.why-us .box:hover ul.points-list li i {
+    color: #fff;
+}
