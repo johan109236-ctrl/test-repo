@@ -1,6 +1,4 @@
-'use client'
-import { ContactForm } from '@/components/contact-form';
-
+import { ContactForm } from '@/app/components/contact-form';
 export const metadata = {
   title: 'Contact Us | Nepal Himal Adventures',
   description: 'Get in touch with Nepal Himal Adventures. Contact us for trek bookings and inquiries.',

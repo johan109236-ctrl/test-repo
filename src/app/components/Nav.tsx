@@ -74,7 +74,7 @@ export default function Nav() {
 
       {/* Book Now */}
       <div className="header-right">
-        <a href="#contact" className="header-book-btn">Book Now</a>
+        <a href="/contact" className="header-book-btn">Book Now</a>
       </div>
 
       {/* Mobile css */}

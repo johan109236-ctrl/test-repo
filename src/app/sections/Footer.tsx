@@ -1,7 +1,12 @@
 'use client';
 
+
+import { usePathname } from 'next/navigation';
+
 export default function Footer() {
+  const pathname = usePathname();
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
 
   return (
     <footer>
@@ -286,17 +291,24 @@ export default function Footer() {
       `}</style>
 
       {/* Top banner */}
-      <div className="ft-banner">
-        <div className="ft-banner-inner">
-          <div>
-            <p className="ft-banner-label">Don&apos;t just dream it</p>
-            <h3 className="ft-banner-heading">
-              Conquer the <em className="ft-banner-gold">Himalayas</em>
-            </h3>
-          </div>
-          <a href="#contact" className="ft-banner-btn">Book Your Adventure</a>
-        </div>
+
+      {pathname !== '/contact' && (
+  <div className="ft-banner">
+    <div className="ft-banner-inner">
+      <div>
+        <p className="ft-banner-label">Don&apos;t just dream it</p>
+        <h3 className="ft-banner-heading">
+          Conquer the <em className="ft-banner-gold">Himalayas</em>
+        </h3>
       </div>
+      <a href="/contact" className="ft-banner-btn">Book Your Adventure</a>
+    </div>
+  </div>
+)}
+
+
+      
+
 
       {/* Main */}
       <div className="ft-main">
