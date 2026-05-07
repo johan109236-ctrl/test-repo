@@ -4,37 +4,37 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const treks = [
-  { title: 'Everest Base Camp Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/package/everest-base.jpg',           href: '/nepal/everest/everest-base-camp-trek' },
-  { title: 'Annapurna Base Camp Trek',          duration: '10–12 Days', difficulty: 'Moderate',    image: '/package/annapurna-base-camp.jpg',    href: '/nepal/annapurna/annapurna-base-camp-trek' },
-  { title: 'Gokyo Lake Trek',                   duration: '15 Days', difficulty: 'Moderate',    image: '/gokyo-lakes.jpg',                    href: '/nepal/everest/gokyo-lake-trek' },
-  { title: 'Annapurna Circuit Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/annapurna-circuit.jpg',              href: '/nepal/annapurna/annapurna-circuit-trek' },
-  { title: 'Upper Mustang Trek',                duration: '17 Days', difficulty: 'Moderate',    image: '/mustang-region.jpg',                 href: '/nepal/mustang/upper-mustang-trek' },
-  { title: 'Langtang Valley Trek',              duration: '12 Days', difficulty: 'Moderate',    image: '/package/langtang-valley.jpg',        href: '/nepal/langtang/langtang-valley-trek' },
-  { title: 'Ghorepani Poon Hill Trek',          duration: '9 Days',  difficulty: 'Moderate',    image: '/package/ghorepani.jpg',              href: '/nepal/annapurna/ghorepani-poon-hill-trek' },
-  { title: 'Everest Three Passes Trek',         duration: '21 Days', difficulty: 'Strenuous',   image: '/everest-base-camp.jpg',              href: '/nepal/everest/everest-three-passes-trek' },
-  { title: 'Mardi Himal Trek',                  duration: '11 Days', difficulty: 'Moderate',    image: '/package/mardi-himal.jpg',            href: '/nepal/annapurna/mardi-himal-trek' },
-  { title: 'Nar Phu Valley Trek',               duration: '16 Days', difficulty: 'Challenging', image: '/package/Nar-phu-valley.jpg',         href: '/nepal/annapurna/nar-phu-valley-trek' },
-  { title: 'Langtang Heritage Trek',            duration: '16 Days', difficulty: 'Moderate',    image: '/package/langtang-heritage.jpg',      href: '/nepal/langtang/langtang-heritage-trek' },
-  { title: 'Langtang Gosaikunda Trek',          duration: '15 Days', difficulty: 'Challenging', image: '/gosaikunda-region.jpg',              href: '/nepal/langtang/langtang-gosaikunda-trek' },
-  { title: 'Langtang Gosaikunda Helambu Trek',  duration: '16 Days', difficulty: 'Challenging', image: '/package/helambu.jpg',                href: '/nepal/langtang/langtang-gosaikunda-helambu-trek' },
+  { title: 'Everest Base Camp Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/package/everest-base.jpg',           href: 'src/app/Nepal/Treks/Everest/everest-base-camp-trek/page.tsx'},
+  { title: 'Annapurna Base Camp Trek',          duration: '10–12 Days', difficulty: 'Moderate',    image: '/package/annapurna-base-camp.jpg',    href: '/Nepal/Treks/Annapurna/annapurna-base-camp-trek' },
+  { title: 'Gokyo Lake Trek',                   duration: '15 Days', difficulty: 'Moderate',    image: '/gokyo-lakes.jpg',                    href: '/Nepal/Treks/Everest/gokyo-lake-trek' },
+  { title: 'Annapurna Circuit Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/annapurna-circuit.jpg',              href: '/Nepal/Treks/Annapurna/annapurna-circuit-trek' },
+  { title: 'Upper Mustang Trek',                duration: '17 Days', difficulty: 'Moderate',    image: '/mustang-region.jpg',                 href: '/Nepal/Treks/Annapurna/upper-mustang-trek' },
+  { title: 'Langtang Valley Trek',              duration: '12 Days', difficulty: 'Moderate',    image: '/package/langtang-valley.jpg',        href: '/Nepal/Treks/Langtang/langtang-valley-trek' },
+  { title: 'Ghorepani Poon Hill Trek',          duration: '9 Days',  difficulty: 'Moderate',    image: '/package/ghorepani.jpg',              href: '/Nepal/Treks/Annapurna/ghorepani-poon-hill-trek' },
+  { title: 'Everest Three Passes Trek',         duration: '21 Days', difficulty: 'Strenuous',   image: '/everest-base-camp.jpg',              href: '/Nepal/Treks/Everest/everest-three-passes-trek' },
+  { title: 'Mardi Himal Trek',                  duration: '11 Days', difficulty: 'Moderate',    image: '/package/mardi-himal.jpg',            href: '/Nepal/Treks/Annapurna/mardi-himal-trek' },
+  { title: 'Nar Phu Valley Trek',               duration: '16 Days', difficulty: 'Challenging', image: '/package/Nar-phu-valley.jpg',         href: '/Nepal/Treks/Annapurna/nar-phu-valley-trek' },
+  { title: 'Langtang Heritage Trek',            duration: '16 Days', difficulty: 'Moderate',    image: '/package/langtang-heritage.jpg',      href: '/Nepal/Treks/Langtang/langtang-heritage-trek' },
+  { title: 'Langtang Gosaikunda Trek',          duration: '15 Days', difficulty: 'Challenging', image: '/gosaikunda-region.jpg',              href: '/Nepal/Treks/Langtang/langtang-gosaikunda-trek' },
+  { title: 'Langtang Gosaikunda Helambu Trek',  duration: '16 Days', difficulty: 'Challenging', image: '/package/helambu.jpg',                href: '/Nepal/Treks/Langtang/langtang-gosaikunda-helambu-trek' },
 ];
 
 const culturalTours = [
-  { title: 'Kathmandu Valley Cultural Tour',    duration: '5 Days',  difficulty: 'Easy',        image: '/package/kathmandu-cultural.jpg',     href: '/nepal/cultural/kathmandu-valley-tour' },
-  { title: 'Lumbini Pilgrimage Tour',           duration: '3 Days',  difficulty: 'Easy',        image: '/package/lumbini.jpg',                href: '/nepal/cultural/lumbini-pilgrimage' },
-  { title: 'Mustang Cultural Tour',             duration: '12 Days', difficulty: 'Moderate',    image: '/package/mustang-cultural.jpg',       href: '/nepal/cultural/mustang-cultural-tour' },
+  { title: 'Kathmandu Valley Cultural Tour',    duration: '5 Days',  difficulty: 'Easy',        image: '/package/kathmandu-cultural.jpg',     href: '/Nepal/Cultural/kathmandu-valley-tour' },
+  { title: 'Lumbini Pilgrimage Tour',           duration: '3 Days',  difficulty: 'Easy',        image: '/package/lumbini.jpg',                href: '/Nepal/Cultural/lumbini-pilgrimage' },
+  { title: 'Mustang Cultural Tour',             duration: '12 Days', difficulty: 'Moderate',    image: '/package/mustang-cultural.jpg',       href: '/Nepal/Cultural/mustang-cultural-tour' },
 ];
 
 const expeditions = [
-  { title: 'Island Peak Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/nepal/expedition/island-peak' },
-  { title: 'Mera Peak Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/nepal/expedition/mera-peak' },
-  { title: 'Lobuche Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/nepal/expedition/lobuche-peak' },
+  { title: 'Island Peak Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/island-peak' },
+  { title: 'Mera Peak Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/mera-peak' },
+  { title: 'Lobuche Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
 ];
 
 const rafting = [
-  { title: 'Trishuli River Rafting',            duration: '2 Days',  difficulty: 'Easy',        image: '/package/trishuli-rafting.jpg',       href: '/nepal/rafting/trishuli' },
-  { title: 'Bhote Koshi Rafting',               duration: '2 Days',  difficulty: 'Challenging', image: '/package/bhote-koshi.jpg',            href: '/nepal/rafting/bhote-koshi' },
-  { title: 'Seti River Rafting',                duration: '3 Days',  difficulty: 'Moderate',    image: '/package/seti-rafting.jpg',           href: '/nepal/rafting/seti' },
+  { title: 'Trishuli River Rafting',            duration: '2 Days',  difficulty: 'Easy',        image: '/package/trishuli-rafting.jpg',       href: '/Nepal/Rafting/trishuli' },
+  { title: 'Bhote Koshi Rafting',               duration: '2 Days',  difficulty: 'Challenging', image: '/package/bhote-koshi.jpg',            href: '/Nepal/Rafting/bhote-koshi' },
+  { title: 'Seti River Rafting',                duration: '3 Days',  difficulty: 'Moderate',    image: '/package/seti-rafting.jpg',           href: '/Nepal/Rafting/seti' },
 ];
 
 const difficultyColor: Record<string, string> = {
