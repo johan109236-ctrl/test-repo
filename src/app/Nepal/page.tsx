@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const treks = [
-  { title: 'Everest Base Camp Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/package/everest-base.jpg',           href: 'src/app/Nepal/Treks/Everest/everest-base-camp-trek/page.tsx'},
+  { title: 'Everest Base Camp Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/package/everest-base.jpg',           href: '/Nepal/Treks/Everest/everest-base-camp-trek'},
   { title: 'Annapurna Base Camp Trek',          duration: '10–12 Days', difficulty: 'Moderate',    image: '/package/annapurna-base-camp.jpg',    href: '/Nepal/Treks/Annapurna/annapurna-base-camp-trek' },
   { title: 'Gokyo Lake Trek',                   duration: '15 Days', difficulty: 'Moderate',    image: '/gokyo-lakes.jpg',                    href: '/Nepal/Treks/Everest/gokyo-lake-trek' },
   { title: 'Annapurna Circuit Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/annapurna-circuit.jpg',              href: '/Nepal/Treks/Annapurna/annapurna-circuit-trek' },
