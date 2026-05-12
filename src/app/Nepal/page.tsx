@@ -26,9 +26,15 @@ const culturalTours = [
 ];
 
 const expeditions = [
+  { title: 'Everest High Passes & Island Peak',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/EverestHighpassesandIsland' },
+  { title: 'Ama Dablam Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/AmaDablam' },
+  { title: 'Everest Base Camp & Lobuche Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/EverestandLobuche' },
   { title: 'Island Peak Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/island-peak' },
   { title: 'Mera Peak Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/mera-peak' },
-  { title: 'Lobuche Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
+  { title: 'Pisang Peak & Thorung la Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
+  { title: 'Pisang Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/island-peak' },
+  { title: 'Tharpu Chuli Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/mera-peak' },
+  { title: 'Yala Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
 ];
 
 const rafting = [

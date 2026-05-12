@@ -4,171 +4,126 @@ import Link from 'next/link';
 
 // ── EDIT CONTENT HERE ─────────────────────────────────────────────────────────
 const TREK = {
-  title: 'Everest Base Camp Trek',
-  duration: '16 Days',
-  difficulty: 'Strenuous / Challenging',
-  elevation: '5,545 m / 18,192 ft',
-  season: 'Spring (March to May) & Autumn (Late September to November)',
+  title: 'Everest Base Camp & Lobuche East Peak',
+  duration: '20 Days',
+  difficulty: 'Challenging / Semi-Technical',
+  elevation: '6,119 m / 20,075 ft',
+  season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
   groupSize: '2 or more',
-  activity: 'Trekking / Hiking',
+  activity: 'Strenuous Trekking / Moderate Technical Climbing',
   accommodation: 'Tea House & Hotel',
   heroImages: [
+    '/assets/images/lobuche-east.jpg',
     '/assets/images/everest-base-camp.jpg',
-    '/assets/images/hbg.jpg',
-    '/assets/images/gokyo-lakes.jpg'
+    '/assets/images/lobuche-summit.jpg'
   ],
   breadcrumb: [
     { label: 'Nepal', href: '/Nepal' },
     { label: 'Everest', href: '/Nepal#trekking' },
-    { label: 'Everest Base Camp Trek', href: '#' },
+    { label: 'Everest Base Camp & Lobuche East Peak', href: '#' },
   ],
 
-  description: `A monumental trek on the legendary path of pioneers to the majestic foothills of the world's highest peak, Mount Everest. The 16-day Everest Base Camp Trek is an iconic journey of challenge and discovery in the high Himalayas, combining breathtaking Himalayan panoramas, Sherpa culture, and one of the world's most legendary trekking experiences.`,
+  description: `Transition from the iconic trails of the Khumbu to the sharp ridges of Lobuche East, mastering crampons, fixed ropes, and alpine terrain to conquer a true Himalayan 6,000m peak. This expedition blends the legendary Everest Base Camp journey with a rewarding semi-technical summit experience.`,
 
   highlights: [
-    'Everest Base Camp (5,364m) — stand at the legendary starting point of Everest expeditions',
-    'Kala Patthar Sunrise/Viewpoint (5,545m) for spectacular Mount Everest sunrise views',
-    'Thrilling scenic Lukla flight into the Khumbu region',
-    'Explore Namche Bazaar, the vibrant Sherpa hub of the Himalayas',
-    'High-altitude acclimatization days for safe trekking',
-    'Immerse yourself in authentic Sherpa culture and Buddhist traditions',
-    'Experience diverse scenery from forests to glaciers',
-    'Witness incredible Himalayan panoramas including Ama Dablam, Lhotse, and Nuptse',
-    'Alternative route options available for experienced trekkers',
+    'Summit Lobuche East Peak (6,119m), a true Himalayan mountaineering achievement',
+    'Stand at Everest Base Camp (5,364m), the legendary gateway to Everest expeditions',
+    'Witness sunrise over Everest from Kala Patthar (5,545m)',
+    'Enjoy 360° panoramic views of Everest, Lhotse, Nuptse, Ama Dablam, and Makalu',
+    'Experience the spiritual heart of the Khumbu at Tengboche Monastery',
+    'Cross the memorial ridge at Thukla Pass honoring Everest climbers',
+    'Train with crampons and fixed ropes during the technical climbing phase',
+    'Immerse yourself in authentic Sherpa culture and mountain hospitality',
   ],
 
   overview: [
-    `The Everest Base Camp (EBC) trek is a demanding high-altitude journey that requires careful preparation, primarily focused on altitude acclimatization. The trek typically starts after a flight to Lukla (2,860m) and reaches Everest Base Camp at 5,364m, often including a climb to Kala Patthar (5,545m) for the best views. The standard itinerary is deliberately paced with acclimatization days in Namche Bazaar and Dingboche, which are essential for your body to adjust to lower oxygen levels.`,
+    `The Everest Base Camp and Lobuche East expedition combines one of the world's most iconic trekking routes with the thrill of a semi-technical Himalayan summit. Beginning with a scenic flight to Lukla, the journey follows the classic Everest trail through Namche Bazaar, Tengboche, and Dingboche before reaching Everest Base Camp (5,364m) and Kala Patthar (5,545m).`,
 
-    `Acute Mountain Sickness (AMS) can affect anyone regardless of fitness level, making acclimatization critical. Symptoms such as headaches, dizziness, or nausea should never be ignored. Staying hydrated by drinking 3–4 liters of water daily, avoiding alcohol, and following the “climb high, sleep low” principle are among the most effective ways to ensure a safe trek.`,
+    `Designed for strong trekkers seeking an introduction to Himalayan mountaineering, this itinerary emphasizes gradual acclimatization before transitioning to Lobuche East Base Camp and High Camp. Climbers gain practical experience with crampons, harnesses, and fixed ropes before making the summit push.`,
 
-    `Success on the Everest Base Camp trek depends heavily on physical and logistical preparation. Begin endurance and strength training 2–3 months prior to your trek and invest in proper trekking gear, including quality trekking boots and layered clothing suitable for cold, high-altitude conditions. Licensed guides and porters are highly recommended for navigation, safety, and carrying gear.`,
+    `The dramatic summit of Lobuche East (6,119m) offers one of the finest viewpoints in Nepal, with spectacular close-up panoramas of Everest, Lhotse, Nuptse, Ama Dablam, and the Khumbu Glacier. This expedition bridges the gap between trekking and true alpine climbing, creating an unforgettable Himalayan achievement.`,
 
-    `The trek begins with an exciting flight to Lukla and passes through Sherpa villages like Phakding, dramatic suspension bridges, and the bustling center of Namche Bazaar. The journey culminates at Everest Base Camp (5,364m), followed by a pre-dawn ascent to Kala Patthar (approx. 5,545m) for unforgettable sunrise views of Mount Everest. The experience is more than reaching a destination — it is a deep connection with the immense power of the Himalayas and the resilient Buddhist culture of the Sherpa people.`,
-
-    `NOTE: While we strive to follow the planned itinerary, circumstances beyond our control such as weather, flight delays, natural disasters, political changes, or health concerns may require adjustments. We highly recommend arriving one or two days before your trek begins to rest, organize equipment, and allow flexibility for possible delays.`,
+    `NOTE: Weather, flight delays, political situations, or health conditions may require itinerary adjustments. We strongly recommend arriving in Kathmandu 1–2 days early and allowing buffer days before international flights to accommodate possible Lukla flight delays.`,
   ],
 
   itinerary: [
-    {
-      day: 1,
-      title: 'Arrival in Kathmandu (1,400 m / 4,593 ft)',
-      description: 'Airport pick-up and transportation provided to hotel.'
-    },
-    {
-      day: 2,
-      title: 'Half-day city tour & trek briefing',
-      description: 'Afternoon trek briefing and preparation. Welcome dinner at a traditional Nepali restaurant.'
-    },
-    {
-      day: 3,
-      title: 'Fly to Lukla (2,840 m / 9,317 ft) & Trek to Phakding (2,610 m / 8,562 ft)',
-      description: '3–4 hours of trekking after a scenic mountain flight.'
-    },
-    {
-      day: 4,
-      title: 'Trek to Namche Bazaar (3,450 m / 11,318 ft)',
-      description: '6–7 hours crossing suspension bridges and entering the Sherpa capital.'
-    },
-    {
-      day: 5,
-      title: 'Namche Bazaar — Acclimatization Day',
-      description: 'Rest and acclimatization day to help your body adjust to the altitude.'
-    },
-    {
-      day: 6,
-      title: 'Trek to Phortse (3,810 m / 12,500 ft)',
-      description: '5–6 hours of trekking through stunning Himalayan landscapes.'
-    },
-    {
-      day: 7,
-      title: 'Trek to Dingboche (4,350 m / 14,271 ft)',
-      description: '5–6 hours through increasingly alpine scenery.'
-    },
-    {
-      day: 8,
-      title: 'Dingboche — Acclimatization Day',
-      description: 'Rest and acclimatization to prepare for higher elevation trekking.'
-    },
-    {
-      day: 9,
-      title: 'Trek to Lobuche (4,910 m / 16,108 ft)',
-      description: '5–6 hours trekking alongside the Khumbu glacier.'
-    },
-    {
-      day: 10,
-      title: 'Trek to Gorakshep (5,189 m / 17,024 ft) & Everest Base Camp (5,364 m / 17,598 ft)',
-      description: '3 hours to Gorakshep, then 4 hours to Everest Base Camp. Overnight at Gorakshep.'
-    },
-    {
-      day: 11,
-      title: 'Kala Patthar (5,545 m / 18,192 ft) & Trek to Pheriche (4,240 m / 13,910 ft)',
-      description: 'Morning sunrise hike followed by descent to Pheriche (5–6 hours).'
-    },
-    {
-      day: 12,
-      title: 'Trek to Namche Bazaar (3,450 m / 11,318 ft)',
-      description: 'Descend back through the Khumbu region.'
-    },
-    {
-      day: 13,
-      title: 'Trek to Phakding (2,610 m / 8,562 ft)',
-      description: 'Continue descending through familiar villages and valleys.'
-    },
-    {
-      day: 14,
-      title: 'Trek to Lukla (2,840 m / 9,317 ft)',
-      description: 'Final trekking day and celebration of your achievement.'
-    },
-    {
-      day: 15,
-      title: 'Return Flight to Kathmandu',
-      description: 'Transportation provided to hotel upon arrival.'
-    },
-    {
-      day: 16,
-      title: 'Departure Day',
-      description: 'Transportation provided to Tribhuvan International Airport.'
-    },
+    { day: 1, title: 'Arrival in Kathmandu (1,400 m / 4,593 ft)', description: 'Airport pickup, hotel check-in, and rest.' },
+
+    { day: 2, title: 'Kathmandu Half-Day City Tour', description: 'Visit major cultural sites, trek briefing, gear check, and welcome dinner at a traditional Nepali restaurant.' },
+
+    { day: 3, title: 'Fly to Lukla → Trek to Phakding', description: '35-minute flight (or drive to Ramechhap + short flight). Trek to Phakding (3–4 hrs).' },
+
+    { day: 4, title: 'Trek to Namche Bazaar (3,440 m)', description: '5–6 hours. First major ascent into the Khumbu region.' },
+
+    { day: 5, title: 'Namche Bazaar — Acclimatization Day', description: 'Hike to Everest View Hotel for panoramic mountain views before returning to Namche.' },
+
+    { day: 6, title: 'Trek to Tengboche Monastery (3,860 m)', description: '5–6 hours with stunning views of Ama Dablam.' },
+
+    { day: 7, title: 'Trek to Dingboche (4,410 m)', description: '5–6 hours through alpine terrain.' },
+
+    { day: 8, title: 'Chukhung Valley Acclimatization Day', description: 'Day hike to 4,730m before returning to Dingboche to sleep low.' },
+
+    { day: 9, title: 'Trek to Lobuche (4,930 m)', description: '5–6 hours via the Thukla Pass memorial ridge.' },
+
+    { day: 10, title: 'Everest Base Camp → Gorak Shep', description: 'Trek to Everest Base Camp (5,364m), then return to Gorak Shep. 7–8 hrs.' },
+
+    { day: 11, title: 'Kala Patthar Sunrise → Lobuche', description: 'Pre-dawn hike to Kala Patthar (5,555m) followed by descent to Lobuche.' },
+
+    { day: 12, title: 'Trek to Lobuche East Base Camp', description: 'Move to base camp, equipment check, climbing briefing, and preparation.' },
+
+    { day: 13, title: 'Move to High Camp — Acclimatization', description: 'Short climb to High Camp (~5,400m). Rope and crampon practice if needed.' },
+
+    { day: 14, title: 'Summit Lobuche East (6,119 m)', description: 'Early alpine summit push and descent back to Base Camp. 10–11 hours.' },
+
+    { day: 15, title: 'Spare / Weather Contingency Day', description: 'Reserved for summit flexibility or recovery after climbing.' },
+
+    { day: 16, title: 'Trek to Pangboche (3,930 m)', description: 'Long descent day through alpine valleys.' },
+
+    { day: 17, title: 'Trek to Namche Bazaar (3,440 m)', description: 'Return to the vibrant Sherpa hub.' },
+
+    { day: 18, title: 'Trek to Lukla (2,840 m)', description: 'Final trekking day and celebration with the team.' },
+
+    { day: 19, title: 'Fly Back to Kathmandu', description: 'Morning flight from Lukla and overnight hotel stay in Kathmandu. Farewell dinner.' },
+
+    { day: 20, title: 'Final Departure', description: 'Transfer to Tribhuvan International Airport.' },
   ],
 
   included: [
-    'All essential permits',
-    'Airport transportation to/from Kathmandu hotels and airport per specified package dates',
-    'Three-star, twin-bed (shared) hotel accommodation in Kathmandu (4 and 5-star available at extra cost)',
+    'All essential permits including Sagarmatha National Park, Khumbu Local Permit, and Lobuche East climbing permit',
+    'Airport transportation to/from Kathmandu hotels and airport',
+    'Three-star, twin-bed hotel accommodation in Kathmandu (4 & 5-star available at extra charge)',
     'Welcome dinner at a traditional Nepali restaurant',
-    'Half-day guided Kathmandu sightseeing tour including entrance fees and a minimum of one UNESCO site',
+    'Half-day guided Kathmandu sightseeing tour with UNESCO heritage entrance fees',
     'All government and local taxes',
-    'All ground transportation to/from destinations listed in itinerary',
-    'Teahouse overnight accommodation in twin-bed room (shared)',
-    'Professional trekking guide/group leader and porter (related expenses included)',
+    'All transportation listed in itinerary',
+    'Teahouse accommodation during trek and tented accommodation at Lobuche Base Camp',
+    'Professional climbing guide, trekking guide, and porter support',
     'Meals during trek: breakfast, lunch, and dinner',
-    'Health & Safety Equipment: oxygen cans, medical kit, oximeter, automatic pressure machine, satellite phone',
-    'Sleeping bag and down jacket during trek',
-    'Nepal Himal Adventures souvenirs: Duffel bag, T-shirt, Sun hat, Trekking Map, Buff, Sleeping Bag, Trip completion certificate',
+    'Health & safety equipment: oxygen canisters, medical kit, oximeter, blood pressure monitor, satellite phone',
+    'Sleeping bag and down jacket during expedition',
+    'Nepal Himal Adventures souvenirs: duffel bag, T-shirt, sun hat, trekking map, buff, sleeping bag, trip completion certificate',
   ],
 
   excluded: [
-    'Nepali visa fees',
-    'Personal expenses including food while not on trek',
-    'International flight fares',
-    'Emergency medical rescue/evacuation due to illness or injury',
+    'Nepal visa fees',
+    'International flight tickets',
+    'Personal expenses outside trekking period',
+    'Emergency medical rescue or helicopter evacuation',
     'Staff tipping',
-    'Extra night accommodation in Kathmandu for early arrivals or late departures',
-    'Travel or medical insurance',
-    'Optional tours, sightseeing, and activities during free time',
-    'Donations to locals or organizations',
+    'Extra hotel nights in Kathmandu due to early arrival or delayed departure',
+    'Travel and medical insurance',
+    'Optional tours and activities during free time',
     'Snacks during trek',
-    'Other personal expenses such as laundry, battery charging, showers, etc.',
+    'Laundry, charging, hot showers, and personal expenses',
   ],
 
   notes: [
-    'For every two participants, one porter is assigned. Each porter carries a maximum of 25 kg / 55 lbs total.',
-    'Your duffel bag should weigh no more than 12.5 kg / 27.56 lbs per client.',
-    'Bring your own waterproof daypack for cash, documents, water, camera, toiletries, sunscreen, and daily essentials.',
-    'Non-trekking luggage can be stored at the hotel in Kathmandu.',
-    'A high-quality hooded down jacket is included. USD 150 fee applies for loss or significant damage.',
-    'A 4-season sleeping bag is included. USD 150 fee applies for loss or significant damage.',
+    'One porter is assigned for every two participants (maximum load: 25kg total).',
+    'Duffel bag weight should not exceed 12.5kg / 27.5 lbs per participant.',
+    'Bring your own waterproof daypack for valuables and daily essentials.',
+    'Non-trekking luggage can be safely stored in Kathmandu.',
+    'Down jacket included — USD 150 fee applies for loss or severe damage.',
+    'Sleeping bag included — USD 150 fee applies for loss or severe damage.',
   ],
 };
 
