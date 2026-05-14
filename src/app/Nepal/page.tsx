@@ -4,19 +4,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const treks = [
-  { title: 'Everest Base Camp Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/package/everest-base.jpg',           href: '/Nepal/Treks/Everest/everest-base-camp-trek'},
-  { title: 'Annapurna Base Camp Trek',          duration: '10–12 Days', difficulty: 'Moderate',    image: '/package/annapurna-base-camp.jpg',    href: '/Nepal/Treks/Annapurna/annapurna-base-camp-trek' },
-  { title: 'Gokyo Lake Trek',                   duration: '15 Days', difficulty: 'Moderate',    image: '/gokyo-lakes.jpg',                    href: '/Nepal/Treks/Everest/gokyo-lake-trek' },
-  { title: 'Annapurna Circuit Trek',            duration: '16 Days', difficulty: 'Challenging', image: '/annapurna-circuit.jpg',              href: '/Nepal/Treks/Annapurna/annapurna-circuit-trek' },
-  { title: 'Upper Mustang Trek',                duration: '17 Days', difficulty: 'Moderate',    image: '/mustang-region.jpg',                 href: '/Nepal/Treks/Annapurna/upper-mustang-trek' },
-  { title: 'Langtang Valley Trek',              duration: '12 Days', difficulty: 'Moderate',    image: '/package/langtang-valley.jpg',        href: '/Nepal/Treks/Langtang/langtang-valley-trek' },
-  { title: 'Ghorepani Poon Hill Trek',          duration: '9 Days',  difficulty: 'Moderate',    image: '/package/ghorepani.jpg',              href: '/Nepal/Treks/Annapurna/ghorepani-poon-hill-trek' },
-  { title: 'Everest Three Passes Trek',         duration: '21 Days', difficulty: 'Strenuous',   image: '/everest-base-camp.jpg',              href: '/Nepal/Treks/Everest/everest-three-passes-trek' },
-  { title: 'Mardi Himal Trek',                  duration: '11 Days', difficulty: 'Moderate',    image: '/package/mardi-himal.jpg',            href: '/Nepal/Treks/Annapurna/mardi-himal-trek' },
-  { title: 'Nar Phu Valley Trek',               duration: '16 Days', difficulty: 'Challenging', image: '/package/Nar-phu-valley.jpg',         href: '/Nepal/Treks/Annapurna/nar-phu-valley-trek' },
-  { title: 'Langtang Heritage Trek',            duration: '16 Days', difficulty: 'Moderate',    image: '/package/langtang-heritage.jpg',      href: '/Nepal/Treks/Langtang/langtang-heritage-trek' },
-  { title: 'Langtang Gosaikunda Trek',          duration: '15 Days', difficulty: 'Challenging', image: '/gosaikunda-region.jpg',              href: '/Nepal/Treks/Langtang/langtang-gosaikunda-trek' },
-  { title: 'Langtang Gosaikunda Helambu Trek',  duration: '16 Days', difficulty: 'Challenging', image: '/package/helambu.jpg',                href: '/Nepal/Treks/Langtang/langtang-gosaikunda-helambu-trek' },
+  { title: 'Everest Base Camp Trek', duration: '16 Days', difficulty: 'Challenging', image: '/assets/images/everest-base-camp.jpg', href: '/Nepal/Treks/Everest/everest-base-camp-trek' },
+  { title: 'Gokyo Lake Trek', duration: '14 Days', difficulty: 'Moderate', image: '/assets/images/gokyo-lakes.jpg', href: '/Nepal/Treks/gokyo-lake-trek' },
+  { title: 'Annapurna Circuit Trek', duration: '16 Days', difficulty: 'Challenging', image: '/assets/images/annapurna-circuit.jpg', href: '/Nepal/Treks/annapurna-circuit-trek' },
+  { title: 'Upper Mustang Trek', duration: '17 Days', difficulty: 'Moderate', image: '/assets/images/mustang-region.jpg', href: '/Nepal/Treks/upper-mustang-trek' },
+  { title: 'Langtang Valley Trek', duration: '12 Days', difficulty: 'Moderate', image: '/assets/images/langtang-valley.jpg', href: '/Nepal/Treks/langtang-valley-trek' },
+  { title: 'Ghorepani Poon Hill Trek', duration: '10 Days', difficulty: 'Moderate', image: '/assets/images/ghorepani.jpg', href: '/Nepal/Treks/ghorepani-poon-hill-trek' },
+  { title: 'Everest Three Passes Trek', duration: '21 Days', difficulty: 'Strenuous', image: '/assets/images/everest-base-camp.jpg', href: '/Nepal/Treks/everest-three-passes-trek' },
+  { title: 'Mardi Himal Trek', duration: '11 Days', difficulty: 'Moderate', image: '/assets/images/mardi-himal.jpg', href: '/Nepal/Treks/mardi-himal-trek' },
+  { title: 'Nar Phu Valley Trek', duration: '18 Days', difficulty: 'Challenging', image: '/assets/images/nar-phu-valley.jpg', href: '/Nepal/Treks/nar-phu-valley-trek' },
+  { title: 'Langtang Gosaikunda Trek', duration: '15 Days', difficulty: 'Challenging', image: '/assets/images/gosaikunda-region.jpg', href: '/Nepal/Treks/langtang-gosaikunda-trek' },
+  { title: 'Langtang Gosaikunda Helambu Trek', duration: '18 Days', difficulty: 'Challenging', image: '/assets/images/helambu.jpg', href: '/Nepal/Treks/langtang-gosaikunda-helambu-trek' },
+  { title: 'Manaslu Circuit Trek', duration: '16 Days', difficulty: 'Strenuous', image: '/assets/images/manaslu.jpg', href: '/Nepal/Treks/manaslu-circuit-trek' },
+  { title: 'Khopra Danda Trek', duration: '12 Days', difficulty: 'Moderate', image: '/assets/images/khopra-danda.jpg', href: '/Nepal/Treks/khopra-danda-trek' },
+  { title: 'Upper Dolpo Trek', duration: '26 Days', difficulty: 'Strenuous', image: '/assets/images/upper-dolpo.jpg', href: '/Nepal/Treks/upper-dolpo-trek' },
+  { title: 'Annapurna Circuit with Tilicho Lake Trek', duration: '18 Days', difficulty: 'Strenuous', image: '/assets/images/tilicho-lake.jpg', href: '/Nepal/Treks/annapurna-circuit-tilicho-lake-trek' },
+  { title: 'Kanchenjunga Base Camp Trek', duration: '22 Days', difficulty: 'Strenuous', image: '/assets/images/kanchenjunga.jpg', href: '/Nepal/Treks/kanchenjunga-base-camp-trek' },
+  { title: 'Tsum Valley Trek', duration: '17 Days', difficulty: 'Challenging', image: '/assets/images/tsum-valley.jpg', href: '/Nepal/Treks/tsum-valley-trek' },
+  { title: 'Gokyo and Renjo La Pass Trek', duration: '15 Days', difficulty: 'Strenuous', image: '/assets/images/gokyo-lakes.jpg', href: '/Nepal/Treks/gokyo-renjo-la-pass-trek' },
 ];
 
 const culturalTours = [
@@ -26,15 +31,15 @@ const culturalTours = [
 ];
 
 const expeditions = [
-  { title: 'Everest High Passes & Island Peak',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/EverestHighpassesandIsland' },
-  { title: 'Ama Dablam Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/AmaDablam' },
-  { title: 'Everest Base Camp & Lobuche Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/EverestandLobuche' },
-  { title: 'Island Peak Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/island-peak' },
-  { title: 'Mera Peak Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/mera-peak' },
-  { title: 'Pisang Peak & Thorung la Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
-  { title: 'Pisang Expedition',            duration: '20 Days', difficulty: 'Strenuous',   image: '/package/island-peak.jpg',            href: '/Nepal/Expeditions/island-peak' },
-  { title: 'Tharpu Chuli Expedition',              duration: '18 Days', difficulty: 'Strenuous',   image: '/package/mera-peak.jpg',              href: '/Nepal/Expeditions/mera-peak' },
-  { title: 'Yala Peak Expedition',           duration: '22 Days', difficulty: 'Strenuous',   image: '/package/lobuche-peak.jpg',           href: '/Nepal/Expeditions/lobuche-peak' },
+  { title: 'Everest High Passes & Island Peak',           duration: '24 Days', difficulty: 'Strenuous', image: '/package/island-peak.jpg',  href: '/Nepal/Expeditions/EverestHighpassesandIsland' },
+  { title: 'Ama Dablam Expedition',                       duration: '29 Days', difficulty: 'Strenuous', image: '/package/ama-dablam.jpg',    href: '/Nepal/Expeditions/AmaDablam' },
+  { title: 'Everest Base Camp & Lobuche East Peak',       duration: '20 Days', difficulty: 'Strenuous', image: '/package/lobuche-peak.jpg',  href: '/Nepal/Expeditions/EverestandLobuche' },
+  { title: 'Island Peak Climbing',                        duration: '16 Days', difficulty: 'Strenuous', image: '/package/island-peak.jpg',   href: '/Nepal/Expeditions/island-peak' },
+  { title: 'Mera Peak Climbing',                          duration: '20 Days', difficulty: 'Strenuous', image: '/package/mera-peak.jpg',     href: '/Nepal/Expeditions/mera-peak' },
+  { title: 'Pisang Peak & Thorung La Pass',               duration: '22 Days', difficulty: 'Strenuous', image: '/package/pisang-peak.jpg',   href: '/Nepal/Expeditions/pisang-and-thorung-la' },
+  { title: 'Pisang Peak Climbing',                        duration: '15 Days', difficulty: 'Strenuous', image: '/package/pisang-peak.jpg',   href: '/Nepal/Expeditions/pisang-peak' },
+  { title: 'Tharpu Chuli with Annapurna Base Camp',       duration: '19 Days', difficulty: 'Strenuous', image: '/package/tent-peak.jpg',     href: '/Nepal/Expeditions/tharpu-chuli' },
+  { title: 'Yala Peak Climbing',                          duration: '14 Days', difficulty: 'Strenuous', image: '/package/yala-peak.jpg',     href: '/Nepal/Expeditions/yala-peak' },
 ];
 
 const rafting = [
