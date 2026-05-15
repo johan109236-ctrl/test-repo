@@ -1,12 +1,11 @@
 'use client';
 
-
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const pathname = usePathname();
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
 
   return (
     <footer>
@@ -291,24 +290,19 @@ export default function Footer() {
       `}</style>
 
       {/* Top banner */}
-
       {pathname !== '/contact' && (
-  <div className="ft-banner">
-    <div className="ft-banner-inner">
-      <div>
-        <p className="ft-banner-label">Don&apos;t just dream it</p>
-        <h3 className="ft-banner-heading">
-          Conquer the <em className="ft-banner-gold">Himalayas</em>
-        </h3>
-      </div>
-      <a href="/contact" className="ft-banner-btn">Book Your Adventure</a>
-    </div>
-  </div>
-)}
-
-
-      
-
+        <div className="ft-banner">
+          <div className="ft-banner-inner">
+            <div>
+              <p className="ft-banner-label">Don&apos;t just dream it</p>
+              <h3 className="ft-banner-heading">
+                Conquer the <em className="ft-banner-gold">Himalayas</em>
+              </h3>
+            </div>
+            <Link href="/contact" className="ft-banner-btn">Book Your Adventure</Link>
+          </div>
+        </div>
+      )}
 
       {/* Main */}
       <div className="ft-main">
@@ -322,18 +316,18 @@ export default function Footer() {
             Your epic journey awaits in the majestic Himalayas.
           </p>
           <div className="ft-socials">
-            <a href="https://www.instagram.com/nepal_himaladventures/" className="ft-social-btn" aria-label="Instagram" target="blank">
+            <a href="https://www.instagram.com/nepal_himaladventures/" className="ft-social-btn" aria-label="Instagram" target="_blank" rel="noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
                 <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
               </svg>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61583171200916" className="ft-social-btn" aria-label="Facebook" target="blank">
+            <a href="https://www.facebook.com/profile.php?id=61583171200916" className="ft-social-btn" aria-label="Facebook" target="_blank" rel="noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
               </svg>
             </a>
-            <a href="https://www.youtube.com/@NepalHimalAdventures" className="ft-social-btn" aria-label="YouTube" target="blank">
+            <a href="https://www.youtube.com/@NepalHimalAdventures" className="ft-social-btn" aria-label="YouTube" target="_blank" rel="noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
                 <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
@@ -357,7 +351,7 @@ export default function Footer() {
           <h4 className="ft-col-title">Destinations</h4>
           <ul className="ft-col-list">
             <li>
-              <a href="https://www.nepalhimaladventures.com/nepal" className="ft-col-link">Nepal</a>
+              <Link href="/nepal" className="ft-col-link">Nepal</Link>
             </li>
           </ul>
         </div>
@@ -379,14 +373,14 @@ export default function Footer() {
           <h4 className="ft-col-title">Company</h4>
           <ul className="ft-col-list">
             {[
-              { label: 'About Us',      href: 'https://www.nepalhimaladventures.com/company/about' },
-              { label: 'Meet Our Team', href: 'https://www.nepalhimaladventures.com/company/team' },
-              { label: 'Why Choose Us', href: 'https://www.nepalhimaladventures.com/company/why-nha' },
-              { label: 'Reviews',       href: 'https://www.nepalhimaladventures.com/company/reviews' },
-              { label: 'Documents',     href: 'https://www.nepalhimaladventures.com/company/documents' },
+              { label: 'About Us',      href: '/company/About' },
+              { label: 'Meet Our Team', href: '/company/Team' },
+              { label: 'Why Choose Us', href: '/company/WhyUs' },
+              { label: 'Reviews',       href: '/company/Reviews' },
+              { label: 'Documents',     href: '/company/Documents' },
             ].map((item) => (
               <li key={item.label}>
-                <a href={item.href} className="ft-col-link">{item.label}</a>
+                <Link href={item.href} className="ft-col-link">{item.label}</Link>
               </li>
             ))}
           </ul>
@@ -421,14 +415,13 @@ export default function Footer() {
           </p>
           <div className="ft-legal">
             {[
-              { label: 'Terms & Conditions', href: '/app/company/Terms/page.tsx' },
+              { label: 'Terms & Conditions', href: '/company/Terms' },
               { label: 'Privacy Policy',     href: '#' },
               { label: 'Sustainable Policy', href: '#' },
             ].map((item) => (
-              <a key={item.label} href={item.href} className="ft-legal-link">{item.label}</a>
+              <Link key={item.label} href={item.href} className="ft-legal-link">{item.label}</Link>
             ))}
           </div>
-          
         </div>
       </div>
 
