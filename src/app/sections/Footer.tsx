@@ -421,7 +421,7 @@ export default function Footer() {
           </p>
           <div className="ft-legal">
             {[
-              { label: 'Terms & Conditions', href: 'https://www.nepalhimaladventures.com/company/terms' },
+              { label: 'Terms & Conditions', href: '/app/company/Terms/page.tsx' },
               { label: 'Privacy Policy',     href: '#' },
               { label: 'Sustainable Policy', href: '#' },
             ].map((item) => (
