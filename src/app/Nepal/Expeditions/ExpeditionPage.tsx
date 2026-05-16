@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { INCLUDED, EXCLUDED } from '@/app/Nepal/shared/packagedetails';
 
 export type TrekData = {
   title: string;
@@ -17,14 +18,16 @@ export type TrekData = {
   highlights: string[];
   overview: string[];
   itinerary: { day: number; title: string; description: string }[];
-  included: string[];
-  excluded: string[];
+  included?: string[];
+  excluded?: string[];
   notes: string[];
   ctaText?: string;
 };
 
 export default function ExpeditionPage({ data }: { data: TrekData }) {
   const cta = data.ctaText ?? data.title.split(' ')[0];
+  const included = data.included ?? INCLUDED;
+  const excluded = data.excluded ?? EXCLUDED;
 
   return (
     <main id="trek-page">
@@ -48,13 +51,22 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           overflow: hidden;
         }
 
-        .tp-hero-main { position: relative; height: 100%; }
-        .tp-hero-side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; }
-        
-        .tp-hero img {
+        .tp-hero-main { position: relative; height: 100%; overflow: hidden; }
+        .tp-hero-side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; overflow: hidden; }
+
+        .tp-hero-main img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          display: block;
+        }
+
+        .tp-hero-side img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          min-height: 0;
         }
 
         /* --- TITLE SECTION BELOW IMAGES --- */
@@ -270,7 +282,7 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
             <div>
               <h3 className="tp-list-heading">What&apos;s Included</h3>
               <ul className="tp-list">
-                {data.included.map((item, i) => (
+                {included.map((item, i) => (
                   <li key={i} className="tp-list-item"><span>✓</span> {item}</li>
                 ))}
               </ul>
@@ -278,7 +290,7 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
             <div>
               <h3 className="tp-list-heading">What&apos;s Excluded</h3>
               <ul className="tp-list">
-                {data.excluded.map((item, i) => (
+                {excluded.map((item, i) => (
                   <li key={i} className="tp-list-item"><span>✕</span> {item}</li>
                 ))}
               </ul>
