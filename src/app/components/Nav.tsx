@@ -69,7 +69,7 @@ export default function Nav() {
           )}
         </div>
 
-        <a href="#faq" className="header-nav-link">FAQs</a>
+        <a href="/#faq" className="header-nav-link">FAQs</a>
       </nav>
 
       {/* Book Now */}

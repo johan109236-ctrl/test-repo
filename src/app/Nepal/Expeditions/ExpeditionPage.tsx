@@ -28,12 +28,14 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
 
   return (
     <main id="trek-page">
-      <style>{`
+            <style>{`
         #trek-page {
           background-color: #0a0a0a;
           color: #f5f0e8;
           min-height: 100vh;
         }
+
+        /* --- HERO GRID --- */
         .tp-hero {
           position: relative;
           height: 75vh;
@@ -45,9 +47,17 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           background-color: #0a0a0a;
           overflow: hidden;
         }
+
         .tp-hero-main { position: relative; height: 100%; }
         .tp-hero-side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; }
-        .tp-hero img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .tp-hero img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* --- TITLE SECTION BELOW IMAGES --- */
         .tp-hero-content {
           position: relative;
           z-index: 3;
@@ -56,6 +66,7 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           padding: 4rem 1.5rem 2rem;
           width: 100%;
         }
+
         .tp-hero-title {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -64,6 +75,7 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           line-height: 1.1;
           margin: 0.5rem 0 0;
         }
+
         .tp-breadcrumb {
           display: flex;
           align-items: center;
@@ -74,19 +86,32 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           text-transform: uppercase;
           color: rgba(255,255,255,0.5);
         }
+
         .tp-breadcrumb a { color: inherit; text-decoration: none; transition: 0.3s; }
         .tp-breadcrumb a:hover { color: #c9a84c; }
-        .tp-container { max-width: 80rem; margin: 0 auto; padding: 0 1.5rem; }
-        .tp-info-bar {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          background-color: #111;
-          border: 1px solid #1f1f1f;
-          border-radius: 12px;
-          overflow: hidden;
-          margin-bottom: 4rem;
+
+        /* --- UNIFORM INFO BAR --- */
+        .tp-container {
+          max-width: 80rem;
+          margin: 0 auto;
+          padding: 0 1.5rem;
         }
-        .tp-info-item { padding: 2rem 1.5rem; border: none; }
+
+        .tp-info-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+        .tp-info-item {
+  padding: 2rem 1.5rem;
+  border: none;
+}
+
         .tp-info-label {
           font-family: 'Montserrat', sans-serif;
           font-size: 9px;
@@ -95,33 +120,43 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
           color: #c9a84c;
           margin-bottom: 0.5rem;
         }
+
         .tp-info-value {
           font-family: 'Montserrat', sans-serif;
           font-size: 0.85rem;
           color: #f5f0e8;
         }
+
+        /* --- SECTIONS --- */
         .tp-top { display: grid; grid-template-columns: 1fr auto; gap: 3rem; padding: 4rem 0; border-bottom: 1px solid #1a1a1a; }
         .tp-desc { font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: rgba(245,240,232,0.6); line-height: 1.9; }
         .tp-book-col { display: flex; flex-direction: column; gap: 0.75rem; min-width: 220px; }
+
         .tp-btn-primary { background: #c9a84c; color: #000; padding: 1rem; text-align: center; text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.2em; transition: 0.3s; }
         .tp-btn-outline { border: 1px solid #c9a84c; color: #c9a84c; padding: 1rem; text-align: center; text-decoration: none; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; transition: 0.3s; }
+
         .tp-section { padding: 5rem 0; border-bottom: 1px solid #1a1a1a; }
         .tp-section-header { display: flex; gap: 1.5rem; margin-bottom: 3rem; }
         .tp-section-number { color: rgba(201,168,76,0.4); font-size: 10px; letter-spacing: 0.4em; }
         .tp-section-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; }
+
         .tp-highlight-item { display: flex; gap: 0.75rem; margin-bottom: 1rem; font-size: 0.85rem; color: rgba(245,240,232,0.7); }
-        .tp-highlight-dot { width: 6px; height: 6px; background: #c9a84c; border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+        .tp-highlight-dot { width: 6px; height: 6px; background: #c9a84c; border-radius: 50%; margin-top: 7px; }
+
         .tp-day { display: grid; grid-template-columns: 80px 1fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid #1a1a1a; }
         .tp-day-number { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: #c9a84c; }
         .tp-day-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem; }
         .tp-day-desc { font-size: 0.8rem; color: rgba(245,240,232,0.5); }
+
         .tp-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
         .tp-list-heading { color: #c9a84c; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 2rem; }
         .tp-list { list-style: none; padding: 0; }
         .tp-list-item { font-size: 0.8rem; margin-bottom: 0.8rem; color: rgba(245,240,232,0.6); display: flex; gap: 0.5rem; }
+
         .tp-cta { padding: 8rem 0; text-align: center; }
         .tp-cta-heading { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; margin-bottom: 2rem; }
         .tp-gold { font-style: italic; color: #c9a84c; }
+
         @media (max-width: 768px) {
           .tp-hero { grid-template-columns: 1fr; height: 50vh; }
           .tp-hero-side { display: none; }
