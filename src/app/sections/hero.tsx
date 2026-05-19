@@ -66,11 +66,7 @@ export default function Hero() {
         </div> */}
       </div>
 
-      {/* Scroll indicator */}
-      <div className="hero-scroll hero-fade-in" style={{ animationDelay: '1.6s' }}>
-        <span className="hero-scroll-text">Scroll</span>
-        <div className="hero-scroll-arrow">↓</div>
-      </div>
+
     </section>
   );
 }

@@ -32,29 +32,29 @@ const treks = [
   { title: 'Upper Mustang Trek (Drive & Trek Alt)',        duration: '17 Days', difficulty: 'Moderate',    image: '/assets/images/upper-mustang.jpg',            href: '/Nepal/Treks/upper-mustang-trek-drive-trek' },
 ];
 
-const culturalTours = [
-  { title: 'Kathmandu Valley Cultural Tour',    duration: '5 Days',  difficulty: 'Easy',        image: '/package/kathmandu-cultural.jpg',     href: '/Nepal/Cultural/kathmandu-valley-tour' },
-  { title: 'Lumbini Pilgrimage Tour',           duration: '3 Days',  difficulty: 'Easy',        image: '/package/lumbini.jpg',                href: '/Nepal/Cultural/lumbini-pilgrimage' },
-  { title: 'Mustang Cultural Tour',             duration: '12 Days', difficulty: 'Moderate',    image: '/package/mustang-cultural.jpg',       href: '/Nepal/Cultural/mustang-cultural-tour' },
-];
-
 const expeditions = [
-  { title: 'Everest High Passes & Island Peak',           duration: '24 Days', difficulty: 'Strenuous', image: '/package/island-peak.jpg',  href: '/Nepal/Expeditions/EverestHighpassesandIsland' },
-  { title: 'Ama Dablam Expedition',                       duration: '29 Days', difficulty: 'Strenuous', image: '/package/ama-dablam.jpg',    href: '/Nepal/Expeditions/AmaDablam' },
-  { title: 'Everest Base Camp & Lobuche East Peak',       duration: '20 Days', difficulty: 'Strenuous', image: '/package/lobuche-peak.jpg',  href: '/Nepal/Expeditions/EverestandLobuche' },
-  { title: 'Island Peak Climbing',                        duration: '16 Days', difficulty: 'Strenuous', image: '/package/island-peak.jpg',   href: '/Nepal/Expeditions/island-peak' },
-  { title: 'Mera Peak Climbing',                          duration: '20 Days', difficulty: 'Strenuous', image: '/package/mera-peak.jpg',     href: '/Nepal/Expeditions/mera-peak' },
-  { title: 'Pisang Peak & Thorung La Pass',               duration: '22 Days', difficulty: 'Strenuous', image: '/package/pisang-peak.jpg',   href: '/Nepal/Expeditions/pisang-and-thorung-la' },
-  { title: 'Pisang Peak Climbing',                        duration: '15 Days', difficulty: 'Strenuous', image: '/package/pisang-peak.jpg',   href: '/Nepal/Expeditions/pisang-peak' },
-  { title: 'Tharpu Chuli with Annapurna Base Camp',       duration: '19 Days', difficulty: 'Strenuous', image: '/package/tent-peak.jpg',     href: '/Nepal/Expeditions/tharpu-chuli' },
-  { title: 'Yala Peak Climbing',                          duration: '14 Days', difficulty: 'Strenuous', image: '/package/yala-peak.jpg',     href: '/Nepal/Expeditions/yala-peak' },
+  { title: 'Everest Base Camp & Lobuche East',       duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/lobuche-east.jpg',          href: '/Nepal/Expeditions/everest-base-camp-lobuche-east' },
+  { title: 'Ama Dablam Expedition',                  duration: '29 Days', difficulty: 'Strenuous', image: '/assets/images/ama-dablam.jpg',             href: '/Nepal/Expeditions/ama-dablam' },
+  { title: 'Mera Peak Climbing',                     duration: '20 Days', difficulty: 'Strenuous', image: '/assets/images/mera-peak.jpg',             href: '/Nepal/Expeditions/mera-peak' },
+  { title: 'Everest High Passes & Island Peak',      duration: '24 Days', difficulty: 'Strenuous', image: '/assets/images/everest-high-passes.jpg',   href: '/Nepal/Expeditions/everest-high-passes-island-peak' },
+  { title: 'Island Peak Climbing',                   duration: '16 Days', difficulty: 'Strenuous', image: '/assets/images/island-peak.jpg',           href: '/Nepal/Expeditions/island-peak' },
+  { title: 'Pisang Peak Climbing',                   duration: '15 Days', difficulty: 'Strenuous', image: '/assets/images/pisang-peak.jpg',           href: '/Nepal/Expeditions/pisang-peak' },
+  { title: 'Pisang Peak & Thorung La Pass',          duration: '22 Days', difficulty: 'Strenuous', image: '/assets/images/thorong-la.jpg',            href: '/Nepal/Expeditions/pisang-peak-thorong-la' },
+  { title: 'Tent Peak with Annapurna Base Camp',     duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/tent-peak.jpg',             href: '/Nepal/Expeditions/tent-peak-abc' },
+  { title: 'Yala Peak Climbing',                     duration: '14 Days', difficulty: 'Strenuous', image: '/assets/images/yala-peak.jpg',             href: '/Nepal/Expeditions/yala-peak' },
 ];
 
-const rafting = [
-  { title: 'Trishuli River Rafting',            duration: '2 Days',  difficulty: 'Easy',        image: '/package/trishuli-rafting.jpg',       href: '/Nepal/Rafting/trishuli' },
-  { title: 'Bhote Koshi Rafting',               duration: '2 Days',  difficulty: 'Challenging', image: '/package/bhote-koshi.jpg',            href: '/Nepal/Rafting/bhote-koshi' },
-  { title: 'Seti River Rafting',                duration: '3 Days',  difficulty: 'Moderate',    image: '/package/seti-rafting.jpg',           href: '/Nepal/Rafting/seti' },
-];
+// ── OTHERS (Cultural Tours + Rafting) — edit and uncomment when ready ─────────
+// const others = [
+//   // Cultural Tours
+//   { title: 'Kathmandu Valley Cultural Tour',    duration: '5 Days',  difficulty: 'Easy',        image: '/package/kathmandu-cultural.jpg',     href: '/Nepal/Cultural/kathmandu-valley-tour' },
+//   { title: 'Lumbini Pilgrimage Tour',           duration: '3 Days',  difficulty: 'Easy',        image: '/package/lumbini.jpg',                href: '/Nepal/Cultural/lumbini-pilgrimage' },
+//   { title: 'Mustang Cultural Tour',             duration: '12 Days', difficulty: 'Moderate',    image: '/package/mustang-cultural.jpg',       href: '/Nepal/Cultural/mustang-cultural-tour' },
+//   // Rafting
+//   { title: 'Trishuli River Rafting',            duration: '2 Days',  difficulty: 'Easy',        image: '/package/trishuli-rafting.jpg',       href: '/Nepal/Rafting/trishuli' },
+//   { title: 'Bhote Koshi Rafting',               duration: '2 Days',  difficulty: 'Challenging', image: '/package/bhote-koshi.jpg',            href: '/Nepal/Rafting/bhote-koshi' },
+//   { title: 'Seti River Rafting',                duration: '3 Days',  difficulty: 'Moderate',    image: '/package/seti-rafting.jpg',           href: '/Nepal/Rafting/seti' },
+// ];
 
 const difficultyColor: Record<string, string> = {
   'Easy':       '#34d399',
@@ -387,7 +387,6 @@ export default function NepalPage() {
         <Image src="/Nepal-hero-section.jpg" alt="Nepal" fill style={{ objectFit: 'cover' }} priority />
         <div className="np-hero-overlay" />
         <div className="np-hero-content">
-         
           <h1 className="np-hero-heading">Nepal</h1>
         </div>
       </div>
@@ -423,14 +422,13 @@ export default function NepalPage() {
 
       {/* All sections */}
       <div className="np-sections">
-        <Section id="trekking"  number="01" title="Trekking"       subtitle="Programs in Nepal" items={treks} />
-        <Section id="cultural"  number="02" title="Cultural Tours" subtitle="Programs in Nepal" items={culturalTours} />
-        <Section id="rafting"   number="03" title="Rafting"        subtitle="Programs in Nepal" items={rafting} />
-        <Section id="expeditions" number="04" title="Expeditions"  subtitle="Programs in Nepal" items={expeditions} />
+        <Section id="trekking"    number="01" title="Trekking"    subtitle="Programs in Nepal" items={treks} />
+        <Section id="expeditions" number="02" title="Expeditions" subtitle="Programs in Nepal" items={expeditions} />
+
+        {/* Others (Cultural Tours + Rafting) — uncomment when ready */}
+        {/* <Section id="others" number="03" title="Others" subtitle="Programs in Nepal" items={others} /> */}
       </div>
 
     </main>
   );
 }
-
-// {CSS  cha change garne ho bhane paila tailwind halera matrai script hata}

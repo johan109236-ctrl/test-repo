@@ -1,6 +1,7 @@
 'use client';
 
 import './bestSellers.css';
+import Link from 'next/link';
 
 const bestSellers = [
   {
@@ -14,6 +15,7 @@ const bestSellers = [
     description: "A monumental trek on the legendary path of pioneers to the majestic foothills of the world's highest peak.",
     badge: 'Most Popular',
     difficultyClass: 'difficulty-hard',
+    href: '/Nepal/Treks/everest-base-camp-trek',
   },
   {
     title: 'Annapurna Circuit',
@@ -26,6 +28,7 @@ const bestSellers = [
     description: 'An exhilarating odyssey through diverse landscapes to the awe-inspiring Annapurna giants.',
     badge: 'Best Seller',
     difficultyClass: 'difficulty-moderate-hard',
+    href: '/Nepal/Treks/annapurna-circuit-trek-16-days',
   },
   {
     title: 'Gokyo Lakes',
@@ -38,6 +41,7 @@ const bestSellers = [
     description: 'A spectacular journey to the turquoise jewels of the Himalayas, culminating in panoramic Everest views.',
     badge: 'Hidden Gem',
     difficultyClass: 'difficulty-moderate',
+    href: '/Nepal/Treks/gokyo-lakes-trek',
   },
   {
     title: 'Upper Mustang',
@@ -50,6 +54,7 @@ const bestSellers = [
     description: "An expedition into Nepal's Forbidden Kingdom of Lo — Tibetan culture and the ancient walled city of Lo Manthang.",
     badge: 'Exclusive',
     difficultyClass: 'difficulty-hard',
+    href: '/Nepal/Treks/upper-mustang-trek-17-days',
   },
 ];
 
@@ -77,7 +82,9 @@ export default function Treks() {
         {/* ── Trek Cards ──────────────────────────────────── */}
         <div className="treks-grid">
           {bestSellers.map((trek) => (
-            <div key={trek.title} className="trek-card">
+              <Link key={trek.title} href={trek.href} style={{ textDecoration: 'none' }}>
+
+            <div className="trek-card">
               <div className="trek-card-inner">
 
                 {/* Image */}
@@ -102,7 +109,6 @@ export default function Treks() {
 
                   {/* Meta */}
                   <div className="trek-meta">
-                    {/* Clock icon */}
                     <div className="trek-meta-item">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" strokeWidth="2">
                         <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -130,12 +136,13 @@ export default function Treks() {
 
               </div>
             </div>
+              </Link>
           ))}
         </div>
 
         {/* ── View All ────────────────────────────────────── */}
         <div className="treks-view-all">
-          <a href="/Nepal" className="treks-view-all-btn">
+          <a href="/Nepal#expeditions" className="treks-view-all-btn">
             View All Expeditions
             <span>→</span>
           </a>
