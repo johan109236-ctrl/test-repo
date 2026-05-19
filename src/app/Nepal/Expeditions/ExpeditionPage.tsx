@@ -208,8 +208,8 @@ function Sidebar({ price, experts }: { price?: string; experts: ExpertData[] }) 
 
 export default function ExpeditionPage({ data }: { data: TrekData }) {
   const cta      = data.ctaText ?? data.title.split(' ')[0];
-  const included = data.included ?? INCLUDED;
-  const excluded = data.excluded ?? EXCLUDED;
+  const included = (data.included && data.included.length > 0) ? data.included : INCLUDED;
+const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : EXCLUDED;
   const notes    = data.notes ?? [];
   const experts  = data.experts ?? DEFAULT_EXPERTS;
 
