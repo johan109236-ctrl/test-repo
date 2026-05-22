@@ -142,10 +142,10 @@ export default function Treks() {
 
         {/* ── View All ────────────────────────────────────── */}
         <div className="treks-view-all">
-          <a href="/Nepal#expeditions" className="treks-view-all-btn">
-            View All Expeditions
-            <span>→</span>
-          </a>
+          <Link href="/Nepal#expeditions" className="treks-view-all-btn">
+  View All Expeditions
+  <span>→</span>
+</Link>
         </div>
 
       </div>
