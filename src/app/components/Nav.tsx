@@ -5,11 +5,11 @@ import './nav.css';
 
 const companyLinks = [
   { label: 'About Us',           href: '/company/About' },
-  { label: 'Our Team',           href: '/company/Team' },
   { label: 'Why Us',             href: '/company/WhyUs' },
   { label: 'Legal Documents',    href: '/company/Documents' },
-  { label: 'Reviews',            href: '/company/Reviews' },
   { label: 'Terms & Conditions', href: '/company/Terms' },
+  { label: 'Reviews',            href: '/company/Reviews' },
+  { label: 'Our Team',           href: '/company/Team' },
 ];
 
 export default function Nav() {
