@@ -222,7 +222,7 @@ const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : E
     { label: 'Accommodation', value: data.accommodation },
     { label: 'Group Size',    value: data.groupSize },
     { label: 'Start / End',   value: 'Kathmandu' },
-    null, // empty cell to complete 3-col grid
+    { label: 'Meals',         value: 'Included' },
   ];
 
   return (
