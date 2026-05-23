@@ -73,7 +73,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Strenuous Trekking / Moderate Technical Climbing',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/everest-base-camp.jpg', '/assets/images/lobuche-east.jpg', '/assets/images/khumbu.jpg'],
+    heroImages: ['/assets/images/everestbasecamp1.jpg', '/assets/images/everestbasecamp2.jpg', '/assets/images/lobuche1.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -137,7 +137,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Moderate Climbing',
     accommodation: 'Tea House / Hotel & Base Camp (Mini Tented Village)',
-    heroImages: ['/assets/images/pisang-peak.jpg', '/assets/images/annapurna-circuit.jpg', '/assets/images/manang.jpg'],
+    heroImages: ['/assets/images/pptl1.jpg', '/assets/images/pptl2.jpeg', '/assets/images/pp3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -254,7 +254,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Multi-Activity (Trekking & Climbing)',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/everest-high-passes.jpg', '/assets/images/island-peak-summit.jpg', '/assets/images/gokyo-lakes.jpg'],
+    heroImages: ['/assets/images/everestbasecamp1.jpg', '/assets/images/island2.jpeg', '/assets/images/island3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -322,7 +322,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Technical Mountaineering (Rock, Ice & Mixed)',
     accommodation: 'Tea House / Hotel & High Camps (Tented)',
-    heroImages: ['/assets/images/ama-dablam.jpg', '/assets/images/ama-dablam-summit.jpg', '/assets/images/khumbu.jpg'],
+    heroImages: ['/assets/images/amadablam1.jpg', '/assets/images/amadablam2.jpg', '/assets/images/amadablam3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -381,7 +381,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Climbing',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/mera-peak.jpg', '/assets/images/hinku-valley.jpg', '/assets/images/mera-summit.jpg'],
+    heroImages: ['/assets/images/mera1.jpg', '/assets/images/mera2.jpeg', '/assets/images/mera3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -445,7 +445,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Strenuous Trekking / Technical (Snow & Ice)',
     accommodation: 'Tea House / Hotel & Base Camp (Mini Tented Village)',
-    heroImages: ['/assets/images/pisang-peak.jpg', '/assets/images/thorong-la.jpg', '/assets/images/annapurna-circuit.jpg'],
+    heroImages: ['/assets/images/pptl1.jpg', '/assets/images/pptl2.jpeg', '/assets/images/pptl3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -512,7 +512,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Climbing',
     accommodation: 'Tea House / Hotel & Base Camp (Mini Tented Village)',
-    heroImages: ['/assets/images/island-peak.jpg', '/assets/images/island-peak-climb.jpg', '/assets/images/khumbu.jpg'],
+    heroImages: ['/assets/images/island1.jpeg', '/assets/images/island2.jpeg', '/assets/images/island3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },

@@ -246,8 +246,7 @@ const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : E
         }
         .tp-hero-main { height: 100%; overflow: hidden; }
         .tp-hero-side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; overflow: hidden; }
-        .tp-hero-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .tp-hero-side img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
+.tp-hero-main img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }        .tp-hero-side img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
 
         /* ── OUTER LAYOUT ── */
         .tp-outer {

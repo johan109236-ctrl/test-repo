@@ -1,5 +1,6 @@
 import { TrekData } from '../Expeditions/ExpeditionPage';
 
+
 export const treks: Record<string, TrekData> = {
   'langtang-helambu-trek': {
     title: 'Langtang Helambu Trek',
@@ -10,7 +11,7 @@ export const treks: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/langtang-helambu.jpg', '/assets/images/gosaikunda.jpg', '/assets/images/kyanjin-gompa.jpg'],
+    heroImages: ['/assets/images/lht1.jpeg', '/assets/images/lht2.jpeg', '/assets/images/lht3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -74,7 +75,7 @@ export const treks: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/mardi-himal.jpg', '/assets/images/machhapuchhre-view.jpg', '/assets/images/forest-camp.jpg'],
+    heroImages: ['/assets/images/mh1.jpg', '/assets/images/mh2.jpeg', '/assets/images/mh3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -145,7 +146,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea house & Hotel',
-    heroImages: ['/assets/images/tsum-valley.jpg', '/assets/images/mu-gompa.jpg', '/assets/images/ganesh-himal.jpg'],
+    heroImages: ['/assets/images/mtv1.jpg', '/assets/images/mtv3.jpeg', '/assets/images/mtv2.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -230,7 +231,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'High Altitude Trekking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/gokyo-lakes.jpg', '/assets/images/cho-la-pass.jpg', '/assets/images/everest-base-camp.jpg'],
+    heroImages: ['/assets/images/gokyo-lakes.jpg', '/assets/images/gokyo2.jpg', '/assets/images/everestbasecamp1.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -319,7 +320,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/kanchenjunga.jpg', '/assets/images/pangpema.jpg', '/assets/images/kanchenjunga-glacier.jpg'],
+    heroImages: ['/assets/images/kbc1.jpg', '/assets/images/kbc2.jpg', '/assets/images/kbc3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -417,7 +418,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'High Altitude Trekking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/kongma-la.jpg', '/assets/images/cho-la.jpg', '/assets/images/renjo-la.jpg'],
+    heroImages: ['/assets/images/everesthree1.jpg', '/assets/images/everestthree2.jpg', '/assets/images/everestbasecamp1.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -588,7 +589,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/poon-hill.jpg', '/assets/images/ghorepani.jpg', '/assets/images/annapurna-sunrise.jpg'],
+    heroImages: ['/assets/images/ghore1.jpg', '/assets/images/ghore2.jpg', '/assets/images/ghore3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -741,7 +742,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking',
     accommodation: 'Tea House & Lodge',
-    heroImages: ['/assets/images/khopra-danda.jpg', '/assets/images/khayer-lake.jpg', '/assets/images/muldai-viewpoint.jpg'],
+    heroImages: ['/assets/images/kd1.webp', '/assets/images/kd2.jpeg', '/assets/images/kd3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -860,7 +861,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/nar-phu.jpg', '/assets/images/kang-la-pass.jpg', '/assets/images/thorong-la.jpg'],
+    heroImages: ['/assets/images/nar1.jpg', '/assets/images/nar2.jpeg', '/assets/images/nar3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -932,7 +933,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/gokyo-lakes-blue.jpg', '/assets/images/gokyo-ri.jpg', '/assets/images/ngozumpa-glacier.jpg'],
+    heroImages: ['/assets/images/gokyo2.jpg', '/assets/images/gokyo3.jpg', '/assets/images/gokyo1.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1000,7 +1001,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/manaslu.jpg', '/assets/images/larkya-la-pass.jpg', '/assets/images/samagaon.jpg'],
+    heroImages: ['/assets/images/mc1.jpg', '/assets/images/mc3.jpg', '/assets/images/mtv1.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1149,7 +1150,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/tilicho-lake.jpg', '/assets/images/annapurna-circuit-tilicho.jpg', '/assets/images/thorong-la-annapurna.jpg'],
+    heroImages: ['/assets/images/act1.jpg', '/assets/images/act2.jpg', '/assets/images/act3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1297,7 +1298,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/manaslu-tsum.jpg', '/assets/images/mu-gompa-tsum.jpg', '/assets/images/larkya-la.jpg'],
+    heroImages: ['/assets/images/mtv1.jpg', '/assets/images/mtv2.jpg', '/assets/images/mtv3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1363,7 +1364,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/lo-manthang.jpg', '/assets/images/upper-mustang.jpg', '/assets/images/kagbeni.jpg'],
+    heroImages: ['/assets/images/upperm1.jpeg', '/assets/images/upper-mustang.jpg', '/assets/images/upperm3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1507,7 +1508,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Hotel & Teahouse',
-    heroImages: ['/assets/images/kanchenjunga-south.jpg', '/assets/images/kanchenjunga-north.jpg', '/assets/images/ghunsa.jpg'],
+    heroImages: ['/assets/images/kbc1.jpg', '/assets/images/kbc2.jpg', '/assets/images/kbc3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1650,7 +1651,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/annapurna-base-camp-sanctuary.jpg', '/assets/images/abc-sunrise.jpg', '/assets/images/chhomrong.jpg'],
+    heroImages: ['/assets/images/abc1.jpg', '/assets/images/abc2.jpg', '/assets/images/abc3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1718,7 +1719,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/annapurna-circuit.jpg', '/assets/images/thorong-la-prayer-flags.jpg', '/assets/images/manang-valley.jpg'],
+    heroImages: ['/assets/images/annapurna1.jpg', '/assets/images/annapurna2.jpg', '/assets/images/annapurna3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1790,7 +1791,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking / Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/lo-manthang-walls.jpg', '/assets/images/mustang-sky-caves.jpg', '/assets/images/muktinath-temple.jpg'],
+    heroImages: ['/assets/images/upperm1.jpeg', '/assets/images/upper-mustang.jpg', '/assets/images/upperm3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1861,7 +1862,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/everest-base-camp-khumbu.jpg', '/assets/images/kala-patthar.jpg', '/assets/images/namche-bazaar.jpg'],
+    heroImages: ['/assets/images/everestbasecamp1.jpg', '/assets/images/everestbasecamp2.jpg', '/assets/images/everestbasecamp3.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
