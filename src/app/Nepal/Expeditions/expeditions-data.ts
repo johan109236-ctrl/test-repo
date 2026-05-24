@@ -10,7 +10,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Climbing',
     accommodation: 'Tea House / Hotel & Base Camp (Mini Tented Village)',
-    heroImages: ['/assets/images/tent-peak.jpg', '/assets/images/annapurna-base-camp.jpg', '/assets/images/poon-hill.jpg'],
+    heroImages: ['/assets/images/tharu1.jpg', '/assets/images/tharu2.jpg', '/assets/images/tharu3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },
@@ -196,7 +196,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Trekking / Climbing',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/yala-peak.jpg', '/assets/images/langtang.jpg', '/assets/images/kyanjin-gompa.jpg'],
+    heroImages: ['/assets/images/yala1.jpg', '/assets/images/langtang.jpg', '/assets/images/kyanjin-gompa.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },

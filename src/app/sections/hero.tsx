@@ -1,6 +1,8 @@
 'use client';
 
 import './hero.css';
+import Herosearch from '../components/Herosearch';
+
 
 export default function Hero() {
   return (
@@ -35,10 +37,9 @@ export default function Hero() {
         </p>
 
         {/* Buttons */}
-        <div className="hero-btns hero-fade-up" style={{ animationDelay: '0.9s' }}>
-          <a href="#about" className="hero-btn-primary">Explore Treks</a>
-          <a href="#contact" className="hero-btn-outline">Plan My Journey</a>
-        </div>
+        <div className="hero-fade-up" style={{ animationDelay: '0.9s', width: '100%' }}>
+  <Herosearch />
+</div>
 
         {/* Stats */}
         <div className="hero-stats hero-fade-in" style={{ animationDelay: '1.2s' }}>

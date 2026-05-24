@@ -512,7 +512,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/langtang-valley.jpg', '/assets/images/kyanjin-ri.jpg', '/assets/images/langtang-lirung.jpg'],
+    heroImages: ['/assets/images/lgl2.jpg', '/assets/images/lgl1.jpg', '/assets/images/langtang3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -661,7 +661,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'High Altitude Trekking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/ganja-la-pass.jpg', '/assets/images/langtang-valley-ganja.jpg', '/assets/images/tserko-ri.jpg'],
+    heroImages: ['/assets/images/lgl1.jpg', '/assets/images/lgl2.jpg', '/assets/images/glp.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1071,7 +1071,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Camping',
     accommodation: 'Hotel, Teahouse & Alpine Tented Camps',
-    heroImages: ['/assets/images/phoksundo-lake.jpg', '/assets/images/shey-gompa.jpg', '/assets/images/upper-dolpo.jpg'],
+    heroImages: ['/assets/images/upperdolpo1.jpg', '/assets/images/upperdolpo2.jpg', '/assets/images/upperdolpo3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1433,7 +1433,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'Trekking/Camping/Hiking',
     accommodation: 'Hotel, Guesthouse & Tented Camping',
-    heroImages: ['/assets/images/dhaulagiri.jpg', '/assets/images/french-pass.jpg', '/assets/images/hidden-valley.jpg'],
+    heroImages: ['/assets/images/dhaulagiri1.jpg', '/assets/images/dhaulagiri2-pass.jpg', '/assets/images/dhaulagiri3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
