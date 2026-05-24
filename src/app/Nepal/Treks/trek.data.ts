@@ -1222,7 +1222,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'High Altitude Trekking / Expedition',
     accommodation: 'Tea House / Hotel / Alpine Tented Camps',
-    heroImages: ['/assets/images/island-peak.jpg', '/assets/images/kongma-la-2.jpg', '/assets/images/everest-high-passes.jpg'],
+    heroImages: ['/assets/images/everestthree2.jpg', '/assets/images/island1.jpeg', '/assets/images/island2.jpeg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1582,7 +1582,7 @@ itinerary: [
     groupSize: '2 or more',
     activity: 'High Altitude Trekking',
     accommodation: 'Tea House & Hotel',
-    heroImages: ['/assets/images/renjo-la.jpg', '/assets/images/gokyo-ri-sunrise.jpg', '/assets/images/bhote-koshi.jpg'],
+    heroImages: ['/assets/images/lgl1.jpg', '/assets/images/lgl2.jpg', '/assets/images/gokyo-lakes.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },

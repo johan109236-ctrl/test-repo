@@ -8,8 +8,8 @@ const treks = [
   { title: 'Everest Three Passes Trek',             duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/everesthree1.jpg',         href: '/Nepal/Treks/everest-three-passes-trek' },
   { title: 'Gokyo to Everest Base Camp Trek',       duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo-lakes.jpg',          href: '/Nepal/Treks/gokyo-to-everest-base-camp-trek' },
   { title: 'Gokyo Lakes Trek',                      duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo3.jpg',               href: '/Nepal/Treks/gokyo-lakes-trek' },
-  { title: 'Gokyo and Renjo La Pass Trek',          duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/renjo-la.jpg',             href: '/Nepal/Treks/gokyo-renjo-la-pass-trek' },
-  { title: 'Everest High Passes and Island Peak',   duration: '24 Days', difficulty: 'Strenuous',   image: '/assets/images/island-peak.jpg',          href: '/Nepal/Treks/everest-high-passes-island-peak' },
+  { title: 'Gokyo and Renjo La Pass Trek',          duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/lgl1.jpg',             href: '/Nepal/Treks/gokyo-renjo-la-pass-trek' },
+  { title: 'Everest High Passes and Island Peak',   duration: '24 Days', difficulty: 'Strenuous',   image: '/assets/images/everestthree2.jpg',          href: '/Nepal/Treks/everest-high-passes-island-peak' },
 
   { title: 'Annapurna Base Camp Trek',              duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/abc1.jpg',                 href: '/Nepal/Treks/annapurna-base-camp-trek-14-days' },
   { title: 'Annapurna Circuit Trek',                duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/annapurna1.jpg',           href: '/Nepal/Treks/annapurna-circuit-trek-16-days' },
@@ -360,7 +360,7 @@ export default function NepalPage() {
 
       {/* Hero */}
       <div className="np-hero">
-        <Image src="/Nepal.avif" alt="Nepal" fill unoptimized style={{ objectFit: 'cover' }} priority />
+        <Image src="/assets/images/Nepal.jpg" alt="Nepal" fill unoptimized style={{ objectFit: 'cover' }} priority />
         <div className="np-hero-overlay" />
         <div className="np-hero-content">
           <h1 className="np-hero-heading">Nepal</h1>
