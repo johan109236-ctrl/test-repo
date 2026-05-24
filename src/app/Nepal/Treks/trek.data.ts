@@ -1424,8 +1424,8 @@ itinerary: [
     ],
     ctaText: 'Upper Mustang',
   },
-  'dhualagiri-circuit-trek': {
-    title: 'Dhualagiri Circuit Trek',
+  'dhaulagiri-circuit-trek': {
+    title: 'Dhaulagiri Circuit Trek',
     duration: '21 Days',
     difficulty: 'Extreme / Mountaineering Grade',
     elevation: '5,360 m / 17,580 ft',

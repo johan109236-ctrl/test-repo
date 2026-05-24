@@ -4,74 +4,77 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const treks = [
-  { title: 'Everest Base Camp Trek',                       duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/everest-base-camp.jpg',       href: '/Nepal/Treks/everest-base-camp-trek' },
-  { title: 'Everest Three Passes Trek',                    duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/kongma-la.jpg',                href: '/Nepal/Treks/everest-three-passes-trek' },
-  { title: 'Gokyo to Everest Base Camp Trek',              duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo-lakes.jpg',              href: '/Nepal/Treks/gokyo-to-everest-base-camp-trek' },
-  { title: 'Gokyo Lakes Trek',                             duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo-lakes-blue.jpg',         href: '/Nepal/Treks/gokyo-lakes-trek' },
-  { title: 'Gokyo and Renjo La Pass Trek',                 duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/renjo-la.jpg',                 href: '/Nepal/Treks/gokyo-renjo-la-pass-trek' },
-  { title: 'Everest High Passes and Island Peak',          duration: '24 Days', difficulty: 'Strenuous',   image: '/assets/images/island-peak.jpg',              href: '/Nepal/Treks/everest-high-passes-island-peak' },
-  { title: 'Annapurna Base Camp Trek',                     duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/annapurna-base-camp-sanctuary.jpg', href: '/Nepal/Treks/annapurna-base-camp-trek-14-days' },
-  { title: 'Annapurna Circuit Trek',                       duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/annapurna-circuit.jpg',        href: '/Nepal/Treks/annapurna-circuit-trek-16-days' },
-  { title: 'Annapurna Circuit with Tilicho Lake',          duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/tilicho-lake.jpg',             href: '/Nepal/Treks/annapurna-circuit-tilicho-lake-trek' },
-  { title: 'Ghorepani Poon Hill Trek',                     duration: '10 Days', difficulty: 'Moderate',    image: '/assets/images/poon-hill.jpg',                href: '/Nepal/Treks/ghorepani-poon-hill-trek-10-days' },
-  { title: 'Mardi Himal Trek',                             duration: '11 Days', difficulty: 'Moderate',    image: '/assets/images/mardi-himal.jpg',              href: '/Nepal/Treks/mardi-himal-trek' },
-  { title: 'Khopra Danda Trek',                            duration: '12 Days', difficulty: 'Moderate',    image: '/assets/images/khopra-danda.jpg',             href: '/Nepal/Treks/khopra-danda-trek' },
-  { title: 'Nar Phu Valley with Annapurna Circuit',        duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/nar-phu.jpg',                  href: '/Nepal/Treks/nar-phu-valley-annapurna-circuit-trek' },
-  { title: 'Upper Mustang Trek',                           duration: '17 Days', difficulty: 'Moderate',    image: '/assets/images/lo-manthang.jpg',              href: '/Nepal/Treks/upper-mustang-trek-17-days' },
-  { title: 'Manaslu Circuit Trek',                         duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/manaslu.jpg',                  href: '/Nepal/Treks/manaslu-circuit-trek' },
-  { title: 'Manaslu & Tsum Valley Trek',                   duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/manaslu-tsum.jpg',             href: '/Nepal/Treks/manaslu-tsum-valley-trek' },
-  { title: 'Langtang Valley Trek',                         duration: '11 Days', difficulty: 'Moderate',    image: '/assets/images/langtang-valley.jpg',          href: '/Nepal/Treks/langtang-valley-trek' },
-  { title: 'Langtang Valley & Ganja La Pass Trek',         duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/ganja-la-pass.jpg',            href: '/Nepal/Treks/langtang-valley-ganja-la-pass-trek' },
-  { title: 'Langtang Helambu Trek',                        duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/langtang-helambu.jpg',         href: '/Nepal/Treks/langtang-helambu-trek' },
-  { title: 'Tsum Valley Trek',                             duration: '17 Days', difficulty: 'Challenging', image: '/assets/images/tsum-valley.jpg',              href: '/Nepal/Treks/tsum-valley-trek' },
-  { title: 'Upper Dolpo Trek',                             duration: '26 Days', difficulty: 'Strenuous',   image: '/assets/images/phoksundo-lake.jpg',           href: '/Nepal/Treks/upper-dolpo-trek' },
-  { title: 'Kanchenjunga Base Camp Trek (22 Days)',        duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/kanchenjunga-south.jpg',       href: '/Nepal/Treks/kanchenjunga-base-camp-trek-22-days' },
-  { title: 'Kanchenjunga Base Camp Trek (23 Days)',        duration: '23 Days', difficulty: 'Strenuous',   image: '/assets/images/kanchenjunga.jpg',             href: '/Nepal/Treks/kanchenjunga-base-camp-trek-23-days' },
-  { title: 'Dhaulagiri Circuit Trek',                      duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/dhaulagiri.jpg',               href: '/Nepal/Treks/dhualagiri-circuit-trek' },
-  { title: 'Ghorepani Poon Hill Trek (Alt)',               duration: '10 Days', difficulty: 'Moderate',    image: '/assets/images/poon-hill-sunrise.jpg',        href: '/Nepal/Treks/ghorepani-poon-hill-trek-10-days-duplicate' },
-  { title: 'Upper Mustang Trek (Drive & Trek Alt)',        duration: '17 Days', difficulty: 'Moderate',    image: '/assets/images/upper-mustang.jpg',            href: '/Nepal/Treks/upper-mustang-trek-drive-trek' },
+  { title: 'Everest Base Camp Trek',                duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/everestbasecamp1.jpg',    href: '/Nepal/Treks/everest-base-camp-trek' },
+  { title: 'Everest Three Passes Trek',             duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/everesthree1.jpg',         href: '/Nepal/Treks/everest-three-passes-trek' },
+  { title: 'Gokyo to Everest Base Camp Trek',       duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo-lakes.jpg',          href: '/Nepal/Treks/gokyo-to-everest-base-camp-trek' },
+  { title: 'Gokyo Lakes Trek',                      duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/gokyo3.jpg',               href: '/Nepal/Treks/gokyo-lakes-trek' },
+  { title: 'Gokyo and Renjo La Pass Trek',          duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/renjo-la.jpg',             href: '/Nepal/Treks/gokyo-renjo-la-pass-trek' },
+  { title: 'Everest High Passes and Island Peak',   duration: '24 Days', difficulty: 'Strenuous',   image: '/assets/images/island-peak.jpg',          href: '/Nepal/Treks/everest-high-passes-island-peak' },
+
+  { title: 'Annapurna Base Camp Trek',              duration: '14 Days', difficulty: 'Strenuous',   image: '/assets/images/abc1.jpg',                 href: '/Nepal/Treks/annapurna-base-camp-trek-14-days' },
+  { title: 'Annapurna Circuit Trek',                duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/annapurna1.jpg',           href: '/Nepal/Treks/annapurna-circuit-trek-16-days' },
+  { title: 'Annapurna Circuit with Tilicho Lake',   duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/act1.jpg',                 href: '/Nepal/Treks/annapurna-circuit-tilicho-lake-trek' },
+  { title: 'Nar Phu Valley with Annapurna Circuit', duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/nar1.jpg',                 href: '/Nepal/Treks/nar-phu-valley-annapurna-circuit-trek' },
+  { title: 'Ghorepani Poon Hill Trek',              duration: '10 Days', difficulty: 'Moderate',    image: '/assets/images/ghore1.jpg',               href: '/Nepal/Treks/ghorepani-poon-hill-trek-10-days' },
+  { title: 'Mardi Himal Trek',                      duration: '11 Days', difficulty: 'Moderate',    image: '/assets/images/mh1.jpg',                  href: '/Nepal/Treks/mardi-himal-trek' },
+  { title: 'Khopra Danda Trek',                     duration: '12 Days', difficulty: 'Moderate',    image: '/assets/images/kd1.webp',                 href: '/Nepal/Treks/khopra-danda-trek' },
+
+  { title: 'Upper Mustang Trek',                    duration: '17 Days', difficulty: 'Moderate',    image: '/assets/images/upperm1.jpeg',             href: '/Nepal/Treks/upper-mustang-trek-17-days' },
+  { title: 'Upper Dolpo Trek',                      duration: '26 Days', difficulty: 'Strenuous',   image: '/assets/images/upperdolpo1.jpg',          href: '/Nepal/Treks/upper-dolpo-trek' },
+  { title: 'Dhaulagiri Circuit Trek',               duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/dhaulagiri1.jpg',          href: '/Nepal/Treks/dhualagiri-circuit-trek' },
+
+  { title: 'Manaslu Circuit Trek',                  duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/mc1.jpg',                  href: '/Nepal/Treks/manaslu-circuit-trek' },
+  { title: 'Manaslu & Tsum Valley Trek',            duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/mtv1.jpg',                 href: '/Nepal/Treks/manaslu-tsum-valley-trek' },
+  { title: 'Tsum Valley Trek',                      duration: '17 Days', difficulty: 'Challenging', image: '/assets/images/mtv3.jpeg',                href: '/Nepal/Treks/tsum-valley-trek' },
+
+  { title: 'Langtang Valley Trek',                  duration: '11 Days', difficulty: 'Moderate',    image: '/assets/images/lgl2.jpg',                 href: '/Nepal/Treks/langtang-valley-trek' },
+  { title: 'Langtang Valley & Ganja La Pass Trek',  duration: '15 Days', difficulty: 'Strenuous',   image: '/assets/images/lgl1.jpg',                 href: '/Nepal/Treks/langtang-valley-ganja-la-pass-trek' },
+  { title: 'Langtang Helambu Trek',                 duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/lht1.jpeg',                href: '/Nepal/Treks/langtang-helambu-trek' },
+
+  { title: 'Kanchenjunga Base Camp Trek (22 Days)', duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/kbc1.jpg',                 href: '/Nepal/Treks/kanchenjunga-base-camp-trek-22-days' },
+  { title: 'Kanchenjunga Base Camp Trek (23 Days)', duration: '23 Days', difficulty: 'Strenuous',   image: '/assets/images/kbc2.jpg',                 href: '/Nepal/Treks/kanchenjunga-base-camp-trek-23-days' },
 ];
 
 const expeditions = [
-  { title: 'Everest Base Camp & Lobuche East',       duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/lobuche-east.jpg',          href: '/Nepal/Expeditions/everest-base-camp-lobuche-east' },
-  { title: 'Ama Dablam Expedition',                  duration: '29 Days', difficulty: 'Strenuous', image: '/assets/images/ama-dablam.jpg',             href: '/Nepal/Expeditions/ama-dablam' },
-  { title: 'Mera Peak Climbing',                     duration: '20 Days', difficulty: 'Strenuous', image: '/assets/images/mera-peak.jpg',             href: '/Nepal/Expeditions/mera-peak' },
-  { title: 'Everest High Passes & Island Peak',      duration: '24 Days', difficulty: 'Strenuous', image: '/assets/images/everest-high-passes.jpg',   href: '/Nepal/Expeditions/everest-high-passes-island-peak' },
-  { title: 'Island Peak Climbing',                   duration: '16 Days', difficulty: 'Strenuous', image: '/assets/images/island-peak.jpg',           href: '/Nepal/Expeditions/island-peak' },
-  { title: 'Pisang Peak Climbing',                   duration: '15 Days', difficulty: 'Strenuous', image: '/assets/images/pisang-peak.jpg',           href: '/Nepal/Expeditions/pisang-peak' },
-  { title: 'Pisang Peak & Thorung La Pass',          duration: '22 Days', difficulty: 'Strenuous', image: '/assets/images/thorong-la.jpg',            href: '/Nepal/Expeditions/pisang-peak-thorong-la' },
-  { title: 'Tent Peak with Annapurna Base Camp',     duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/tent-peak.jpg',             href: '/Nepal/Expeditions/tent-peak-abc' },
-  { title: 'Yala Peak Climbing',                     duration: '14 Days', difficulty: 'Strenuous', image: '/assets/images/yala-peak.jpg',             href: '/Nepal/Expeditions/yala-peak' },
+  { title: 'Everest Base Camp & Lobuche East',   duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/everestbasecamp1.jpg', href: '/Nepal/Expeditions/everest-base-camp-lobuche-east' },
+  { title: 'Ama Dablam Expedition',              duration: '29 Days', difficulty: 'Technical', image: '/assets/images/amadablam1.jpg',       href: '/Nepal/Expeditions/ama-dablam' },
+  { title: 'Mera Peak Climbing',                 duration: '20 Days', difficulty: 'Strenuous', image: '/assets/images/mera1.jpg',            href: '/Nepal/Expeditions/mera-peak' },
+  { title: 'Everest High Passes & Island Peak',  duration: '24 Days', difficulty: 'Strenuous', image: '/assets/images/everestbasecamp2.jpg', href: '/Nepal/Expeditions/everest-high-passes-island-peak' },
+  { title: 'Island Peak Climbing',               duration: '16 Days', difficulty: 'Strenuous', image: '/assets/images/island1.jpeg',         href: '/Nepal/Expeditions/island-peak' },
+  { title: 'Pisang Peak Climbing',               duration: '15 Days', difficulty: 'Strenuous', image: '/assets/images/pptl1.jpg',            href: '/Nepal/Expeditions/pisang-peak' },
+  { title: 'Pisang Peak & Thorung La Pass',      duration: '22 Days', difficulty: 'Strenuous', image: '/assets/images/pptl3.jpeg',           href: '/Nepal/Expeditions/pisang-peak-thorong-la' },
+  { title: 'Tent Peak with Annapurna Base Camp', duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/tharu1.jpg',           href: '/Nepal/Expeditions/tent-peak-abc' },
+  { title: 'Yala Peak Climbing',                 duration: '14 Days', difficulty: 'Strenuous', image: '/assets/images/yala1.jpg',            href: '/Nepal/Expeditions/yala-peak' },
 ];
-
-// ── OTHERS (Cultural Tours + Rafting) — edit and uncomment when ready ─────────
-// const others = [
-//   // Cultural Tours
-//   { title: 'Kathmandu Valley Cultural Tour',    duration: '5 Days',  difficulty: 'Easy',        image: '/package/kathmandu-cultural.jpg',     href: '/Nepal/Cultural/kathmandu-valley-tour' },
-//   { title: 'Lumbini Pilgrimage Tour',           duration: '3 Days',  difficulty: 'Easy',        image: '/package/lumbini.jpg',                href: '/Nepal/Cultural/lumbini-pilgrimage' },
-//   { title: 'Mustang Cultural Tour',             duration: '12 Days', difficulty: 'Moderate',    image: '/package/mustang-cultural.jpg',       href: '/Nepal/Cultural/mustang-cultural-tour' },
-//   // Rafting
-//   { title: 'Trishuli River Rafting',            duration: '2 Days',  difficulty: 'Easy',        image: '/package/trishuli-rafting.jpg',       href: '/Nepal/Rafting/trishuli' },
-//   { title: 'Bhote Koshi Rafting',               duration: '2 Days',  difficulty: 'Challenging', image: '/package/bhote-koshi.jpg',            href: '/Nepal/Rafting/bhote-koshi' },
-//   { title: 'Seti River Rafting',                duration: '3 Days',  difficulty: 'Moderate',    image: '/package/seti-rafting.jpg',           href: '/Nepal/Rafting/seti' },
-// ];
 
 const difficultyColor: Record<string, string> = {
   'Easy':       '#34d399',
   'Moderate':   '#facc15',
   'Challenging':'#fb923c',
   'Strenuous':  '#f87171',
+  'Technical':  '#c084fc',
 };
 
 function TrekCard({ trek }: { trek: typeof treks[0] }) {
   return (
     <Link href={trek.href} className="np-card">
       <div className="np-card-img">
-        <Image src={trek.image} alt={trek.title} fill sizes="(max-width:640px) 100vw,(max-width:1024px) 50vw,25vw" />
+        {/* unoptimized bypasses Next.js image domain checks — same as <img> but with fill layout */}
+        <Image
+          src={trek.image}
+          alt={trek.title}
+          fill
+          unoptimized
+          sizes="(max-width:640px) 100vw,(max-width:1024px) 50vw,25vw"
+          style={{ objectFit: 'cover' }}
+        />
         <div className="np-card-overlay" />
         <div className="np-card-meta">
           <span className="np-card-duration">{trek.duration}</span>
-          <span className="np-card-difficulty" style={{ color: difficultyColor[trek.difficulty] || '#f5f0e8' }}>
+          <span
+            className="np-card-difficulty"
+            style={{ color: difficultyColor[trek.difficulty] || '#f5f0e8' }}
+          >
             {trek.difficulty}
           </span>
         </div>
@@ -84,7 +87,9 @@ function TrekCard({ trek }: { trek: typeof treks[0] }) {
   );
 }
 
-function Section({ id, number, title, subtitle, items }: {
+function Section({
+  id, number, title, subtitle, items,
+}: {
   id: string; number: string; title: string; subtitle: string; items: typeof treks;
 }) {
   return (
@@ -97,7 +102,7 @@ function Section({ id, number, title, subtitle, items }: {
         </div>
       </div>
       <div className="np-grid">
-        {items.map((item) => <TrekCard key={item.title} trek={item} />)}
+        {items.map((item) => <TrekCard key={item.href} trek={item} />)}
       </div>
     </div>
   );
@@ -113,7 +118,6 @@ export default function NepalPage() {
           min-height: 100vh;
         }
 
-        /* Hero */
         .np-hero {
           position: relative;
           height: 70vh;
@@ -138,27 +142,6 @@ export default function NepalPage() {
           text-align: center;
         }
 
-        .np-breadcrumb {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 11px;
-          letter-spacing: 0.3em;
-          text-transform: uppercase;
-          color: rgba(255,255,255,0.5);
-          margin-bottom: 1rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5rem;
-        }
-
-        .np-breadcrumb a {
-          color: rgba(255,255,255,0.5);
-          text-decoration: none;
-          transition: color 0.3s;
-        }
-
-        .np-breadcrumb a:hover { color: #c9a84c; }
-
         .np-hero-heading {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(4rem, 12vw, 9rem);
@@ -168,7 +151,6 @@ export default function NepalPage() {
           margin: 0;
         }
 
-        /* About block */
         .np-about {
           max-width: 80rem;
           margin: 0 auto;
@@ -219,9 +201,6 @@ export default function NepalPage() {
         }
 
         .np-badge {
-          display: flex;
-          align-items: center;
-          gap: 0.4rem;
           font-family: 'Montserrat', sans-serif;
           font-size: 10px;
           letter-spacing: 0.2em;
@@ -231,7 +210,6 @@ export default function NepalPage() {
           padding: 0.4rem 0.9rem;
         }
 
-        /* Sections */
         .np-sections {
           max-width: 80rem;
           margin: 0 auto;
@@ -279,7 +257,6 @@ export default function NepalPage() {
           line-height: 1.1;
         }
 
-        /* Grid */
         .np-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -291,7 +268,6 @@ export default function NepalPage() {
         @media (max-width: 768px)  { .np-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 480px)  { .np-grid { grid-template-columns: 1fr; } }
 
-        /* Card */
         .np-card {
           display: block;
           background-color: #0a0a0a;
@@ -318,7 +294,7 @@ export default function NepalPage() {
         .np-card-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+          background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
         }
 
         .np-card-meta {
@@ -337,7 +313,7 @@ export default function NepalPage() {
           letter-spacing: 0.2em;
           text-transform: uppercase;
           color: rgba(255,255,255,0.7);
-          background: rgba(0,0,0,0.4);
+          background: rgba(0,0,0,0.45);
           padding: 0.2rem 0.5rem;
         }
 
@@ -346,7 +322,7 @@ export default function NepalPage() {
           font-size: 9px;
           letter-spacing: 0.15em;
           text-transform: uppercase;
-          background: rgba(0,0,0,0.4);
+          background: rgba(0,0,0,0.45);
           padding: 0.2rem 0.5rem;
         }
 
@@ -384,7 +360,7 @@ export default function NepalPage() {
 
       {/* Hero */}
       <div className="np-hero">
-        <Image src="/Nepal-hero-section.jpg" alt="Nepal" fill style={{ objectFit: 'cover' }} priority />
+        <Image src="/Nepal.avif" alt="Nepal" fill unoptimized style={{ objectFit: 'cover' }} priority />
         <div className="np-hero-overlay" />
         <div className="np-hero-content">
           <h1 className="np-hero-heading">Nepal</h1>
@@ -401,10 +377,10 @@ export default function NepalPage() {
         </div>
         <div className="np-about-text">
           <p>
-            Nepal is a land of staggering heights and cultural treasures, home to over 1,300 peaks above 6,000m,
-            including eight legendary 8,000m giants — Everest, Annapurna, and more — all within its borders.
-            The landscapes shift dramatically from lush rhododendron forests to high-altitude deserts, offering
-            awe-inspiring vistas and once-in-a-lifetime experiences.
+            Nepal is a land of staggering heights and cultural treasures, home to over 1,300 peaks above
+            6,000m, including eight legendary 8,000m giants — Everest, Annapurna, and more — all within
+            its borders. The landscapes shift dramatically from lush rhododendron forests to high-altitude
+            deserts, offering awe-inspiring vistas and once-in-a-lifetime experiences.
           </p>
           <p>
             At Nepal Himal Adventures, we craft ambitious yet accessible journeys that go beyond the trail.
@@ -420,13 +396,10 @@ export default function NepalPage() {
         </div>
       </div>
 
-      {/* All sections */}
+      {/* Sections */}
       <div className="np-sections">
         <Section id="trekking"    number="01" title="Trekking"    subtitle="Programs in Nepal" items={treks} />
         <Section id="expeditions" number="02" title="Expeditions" subtitle="Programs in Nepal" items={expeditions} />
-
-        {/* Others (Cultural Tours + Rafting) — uncomment when ready */}
-        {/* <Section id="others" number="03" title="Others" subtitle="Programs in Nepal" items={others} /> */}
       </div>
 
     </main>
