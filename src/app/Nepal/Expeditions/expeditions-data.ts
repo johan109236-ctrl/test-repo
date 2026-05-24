@@ -322,7 +322,7 @@ export const expeditions: Record<string, TrekData> = {
     groupSize: '2 or more',
     activity: 'Technical Mountaineering (Rock, Ice & Mixed)',
     accommodation: 'Tea House / Hotel & High Camps (Tented)',
-    heroImages: ['/assets/images/amadablam1.jpg', '/assets/images/amadablam2.jpg', '/assets/images/amadablam3.jpg'],
+    heroImages: ['/assets/images/amadablam1.JPG', '/assets/images/amadablam2.JPG', '/assets/images/amadablam3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Expeditions', href: '/Nepal#expeditions' },

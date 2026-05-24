@@ -37,7 +37,7 @@ const treks = [
 
 const expeditions = [
   { title: 'Everest Base Camp & Lobuche East',   duration: '19 Days', difficulty: 'Strenuous', image: '/assets/images/everestbasecamp1.jpg', href: '/Nepal/Expeditions/everest-base-camp-lobuche-east' },
-  { title: 'Ama Dablam Expedition',              duration: '29 Days', difficulty: 'Technical', image: '/assets/images/amadablam1.jpg',       href: '/Nepal/Expeditions/ama-dablam' },
+  { title: 'Ama Dablam Expedition',              duration: '29 Days', difficulty: 'Technical', image: '/assets/images/amadablam1.JPG',       href: '/Nepal/Expeditions/ama-dablam' },
   { title: 'Mera Peak Climbing',                 duration: '20 Days', difficulty: 'Strenuous', image: '/assets/images/mera1.jpg',            href: '/Nepal/Expeditions/mera-peak' },
   { title: 'Everest High Passes & Island Peak',  duration: '24 Days', difficulty: 'Strenuous', image: '/assets/images/everestbasecamp2.jpg', href: '/Nepal/Expeditions/everest-high-passes-island-peak' },
   { title: 'Island Peak Climbing',               duration: '16 Days', difficulty: 'Strenuous', image: '/assets/images/island1.jpeg',         href: '/Nepal/Expeditions/island-peak' },
