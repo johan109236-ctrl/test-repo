@@ -3,57 +3,63 @@
 const reasons = [
   {
     id: 1,
-    title: '48-Hour Adaptation',
-    description: 'Your body needs time to adjust to the climate, and it requires time to recover from the physical stress of long trips.',
+    title: 'The "Soft Landing" Strategy: 48-Hour Adaptation',
+    description:
+      'Your body needs time to adjust to the climate, and it requires time to recover from the physical stress of long trips, such as when you take a long flight. This is something that your body must do when you travel away to a new place with a different climate.',
     points: [
-      'Jet Lag Recovery: When you arrive in Kathmandu, we include a two-day rest period to help your body adjust to the new time zone.',
-      'Climate Priming: These 48 hours help your body get used to the local air and environment, reducing altitude risk.',
+      'Jet Lag Recovery: When you arrive in Kathmandu, we include a two-day rest period to help your body adjust to the new time zone. Starting a trek while tired can be difficult, so this time allows you to recover properly and feel ready for your journey.',
+      'Climate Priming: These 48 hours also help your body get used to the local air and environment, reducing the risk of altitude sickness early on.',
     ],
   },
   {
     id: 2,
     title: 'Proactive Clinical Pre-Screening',
-    description: 'Before you put on your boots, we make sure you have everything you need for the trip.',
+    description:
+      'Before you put on your boots, we make sure you have everything you need for the trip.',
     points: [
-      'Pre-Trek Health Check: Identifying possible risks in advance so you can start with confidence.',
-      'Risk Awareness: Clear explanations of risks and how to manage them to stay safe.',
+      'Pre-Trek Health Check: We review your health to identify any possible risks in advance, so you can start your trek with confidence. This way, we can make sure you are ready for the Pre-Trek.',
+      'Risk Awareness: We don’t just say it’s safe to clearly explain possible risks and how to manage them. This helps you understand your body and stay safe throughout the trek.',
     ],
   },
   {
     id: 3,
-    title: 'Dedicated Medical Support',
-    description: 'In the Himalayas, it is hard to find a doctor or a hospital. We bring the support to you.',
+    title: 'Dedicated Medical Support & Physician Access',
+    description:
+      'In the Himalayas, it is hard to find a doctor or a hospital. This is a problem. We are trying to fix this by giving people a way to get help when they need it, even when they are climbing high up in the mountains. The medical safety net we provide goes with you all the way to the top of the peaks.',
     points: [
-      'Assigned Medical Liaison: Access to a dedicated professional during your journey.',
-      'Safe Descent Protocols: A "safety first" approach to bring you down to a safer altitude quickly if needed.',
+      'Assigned Medical Liaison: As a client you will have access to a dedicated Medical Liaison professional during your journey, ready to assist whenever needed.',
+      'Safe Descent Protocols: If you feel unwell due to altitude or illness, we follow a clear “safety first” approach to bring you down to a safer altitude quickly and safely. We make sure you get to an altitude when your body needs it. Our Safe Descent Protocols are in place to help you so you can get the help you need and feel better.',
     ],
   },
   {
     id: 4,
-    title: 'Exclusive "3x3" Safety Protocol',
-    description: 'We use real-time health data to monitor your condition and ensure your safety throughout.',
+    title: 'Our Exclusive "3x3" Daily Safety Protocol',
+    description:
+      'We use real-time health data to monitor your condition and ensure your safety.',
     points: [
-      'Morning Warm-up: Stretching, Yoga Asanas, and Pranayama to improve oxygen intake.',
-      'Triple-Vitals Monitoring: Checking blood pressure and SpO2 levels three times a day.',
-      'Headquarters Reporting: Readings shared daily with our Kathmandu medical team.',
+      'The Morning Warm-up: Each day begins with light stretching and breathing exercises to prepare your body and improve oxygen intake. Before you start your day, our guide takes you through some yoga poses, like Yoga Asanas, to stretch your muscles. They also teach you Pranayama, which is just breathing exercises to help you get oxygen and increase your lung capacity. This is about getting your body ready for the day with Yoga Asanas and breathing exercises, like Pranayama.',
+      'We do Triple-Vitals Monitoring: We check your blood pressure and oxygen levels (SpO2) three times a day to track your health.',
+      'Headquarters Reporting: These readings are shared daily with our Kathmandu team, so we can identify and respond to any issues early. This way, we can see what is going on with the Headquarters data and catch any health issues with the Headquarters’ information before they become serious problems for the Headquarters.',
     ],
   },
   {
     id: 5,
     title: 'Local Roots, Genuine Connections',
-    description: 'We are a 100% Nepali-owned company with deep roots in the communities we pass through.',
+    description:
+      'We are a 100% Nepali-owned company, and Nepal is our home. We know it deeply.',
     points: [
-      'Personalized Experience: Tailored journeys based on your health and hiking pace.',
-      'Responsible Tourism: Supporting local communities to preserve Nepal\'s beauty.',
+      'We do not offer one-size-fits-all tours. Instead, we create personalized experiences based on your needs and preferences.',
+      'We also work closely with local communities and support responsible and sustainable tourism, helping preserve Nepal’s beauty for future generations.',
     ],
   },
   {
     id: 6,
     title: 'Expert and Caring Guides',
-    description: 'Our guides are experienced, medically trained, and truly care about your journey.',
+    description:
+      'Our guides are experienced, skilled, and truly care about your journey. They are not just guides; they are trained to support, motivate, and ensure your safety. They are also trained in basic medical care, so they can respond quickly if needed. This is why families feel comfortable and confident traveling with us.',
     points: [
-      'Medical Training: Guides are trained in basic medical care and altitude management.',
-      'Comfort & Confidence: Making families and solo travelers feel secure throughout.',
+      'Our guides are not just people who know a lot about trains. They really know how to deal with people. They have training to help with medical problems and to motivate the group. This means they can make a hike a really great experience that you will always remember.',
+      'Our guides are the reason why families feel good about going on an adventure with Mountain Travel Sobek. They trust our guides to take care of them. Families know that our guides will make sure they have time on their adventure with Mountain Travel Sobek.',
     ],
   },
 ];
