@@ -10,23 +10,89 @@ export default function AboutUs() {
           min-height: 100vh;
         }
 
-        /* ── Hero banner ──────────────────────────────── */
         .ab-hero {
           position: relative;
-          padding: 10rem 1.5rem 6rem;
-          text-align: center;
+          width: 100%;
+          height: 100vh;
           overflow: hidden;
           border-bottom: 1px solid #1a1a1a;
         }
 
-        .ab-hero::before {
-          content: '';
+        .ab-gold {
+          background: linear-gradient(135deg, #c9a84c 0%, #e8c97a 50%, #9a7a30 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-style: italic;
+        }
+
+        .ab-hero-image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .ab-hero-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+        }
+
+        .ab-hero-overlay {
           position: absolute;
-          inset: 0;
-          opacity: 0.04;
-          background-image: radial-gradient(circle, #c9a84c 1px, transparent 1px);
-          background-size: 32px 32px;
-          pointer-events: none;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 6rem 3rem 3.5rem;
+          background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 60%, transparent 100%);
+        }
+
+        .ab-hero-eyebrow {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+        }
+
+        .ab-hero-eyebrow-line {
+          display: block;
+          height: 1px;
+          width: 2.5rem;
+          background-color: #c9a84c;
+        }
+
+        .ab-hero-eyebrow-text {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 10px;
+          letter-spacing: 0.5em;
+          text-transform: uppercase;
+          color: #c9a84c;
+        }
+
+        .ab-hero-heading {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: clamp(2.5rem, 6vw, 5rem);
+          font-weight: 300;
+          color: #f5f0e8;
+          line-height: 0.95;
+          margin: 0;
+        }
+
+        .ab-hero-heading em {
+          background: linear-gradient(135deg, #c9a84c 0%, #e8c97a 50%, #9a7a30 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-style: italic;
+        }
+
+
+
+        .ab-sections {
+          max-width: 72rem;
+          margin: 0 auto;
+          padding: 0 1.5rem;
         }
 
         .ab-eyebrow {
@@ -52,41 +118,6 @@ export default function AboutUs() {
           color: #c9a84c;
         }
 
-        .ab-hero-heading {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(3rem, 8vw, 6rem);
-          font-weight: 300;
-          color: #f5f0e8;
-          line-height: 0.95;
-          margin: 0 0 2rem;
-        }
-
-        .ab-gold {
-          background: linear-gradient(135deg, #c9a84c 0%, #e8c97a 50%, #9a7a30 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          font-style: italic;
-        }
-
-        .ab-hero-text {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 0.875rem;
-          color: rgba(245, 240, 232, 0.55);
-          line-height: 1.9;
-          letter-spacing: 0.03em;
-          max-width: 52rem;
-          margin: 0 auto;
-        }
-
-        /* ── Sections container ───────────────────────── */
-        .ab-sections {
-          max-width: 72rem;
-          margin: 0 auto;
-          padding: 0 1.5rem;
-        }
-
-        /* ── Content block ────────────────────────────── */
         .ab-block {
           display: grid;
           grid-template-columns: 1fr 2fr;
@@ -98,6 +129,8 @@ export default function AboutUs() {
 
         @media (max-width: 768px) {
           .ab-block { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 0; }
+          .ab-hero { height: 60vw; min-height: 300px; }
+          .ab-hero-overlay { padding: 4rem 1.5rem 2rem; }
         }
 
         .ab-block-label {
@@ -246,32 +279,24 @@ export default function AboutUs() {
         .ab-why-us-link:hover { color: #c9a84c; }
       `}</style>
 
-      {/* Hero */}
       <div className="ab-hero">
-        <div className="ab-eyebrow">
-          <span className="ab-eyebrow-line" />
-          <span className="ab-eyebrow-text">Our Story</span>
-          <span className="ab-eyebrow-line" />
+        <div className="ab-hero-image">
+          <img src="/assets/images/dhaulagiri2.jpg" alt="Nepal Himal Adventures" />
         </div>
-        <h1 className="ab-hero-heading">
-          About <em className="ab-gold">Nepal Himal</em>
-          <br />Adventures
-        </h1>
-        <p className="ab-hero-text">
-          Experience the unparalleled majesty of the Himalayas with our curated trekking tours, where world-class
-          scenery meets high-quality service. From the legendary heights of the Everest region to the cultural
-          wonders of the Annapurna Circuit, we handle every detail of your journey — from professional guiding
-          to comfortable teahouse logistics — allowing you to focus entirely on the breathtaking landscapes.
-          Whether you are crossing high-altitude passes or enjoying a sunset over the peaks, our itineraries are
-          designed to provide a seamless, premium adventure through Nepal&apos;s most iconic terrain. We invite you
-          to step onto the trail and discover the ultimate mountain expedition with us.
-        </p>
+        <div className="ab-hero-overlay">
+          <div className="ab-hero-eyebrow">
+            <span className="ab-hero-eyebrow-line" />
+            <span className="ab-hero-eyebrow-text">Our Story</span>
+          </div>
+          <h1 className="ab-hero-heading">
+            About <em>Nepal Himal Adventures</em>
+            
+          </h1>
+        </div>
       </div>
 
-      {/* Sections */}
       <div className="ab-sections">
 
-        {/* Our Journey */}
         <div className="ab-block">
           <div className="ab-block-label">
             <div className="ab-block-number">01</div>
@@ -313,12 +338,9 @@ export default function AboutUs() {
               local guides, we aim to bridge the gap between rugged adventure and world-class hospitality.
               We don&apos;t just want to take you to your destination — we want to ensure you return home stronger,
               healthier, and inspired, knowing you were supported by the most prepared team in the industry.
-
             </p>
           </div>
         </div>
-
-
 
         {/* CTA */}
         <div className="ab-cta">
@@ -341,8 +363,6 @@ export default function AboutUs() {
             <a href="/contact" className="ab-btn-outline">Contact Us →</a>
           </div>
         </div>
-
-
 
       </div>
     </main>
