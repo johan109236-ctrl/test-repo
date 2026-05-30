@@ -1,4 +1,3 @@
-// src/app/Nepal/preparation/PrepGuide.tsx
 'use client';
 
 import { useState } from 'react';
@@ -22,6 +21,8 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
           color: #f5f0e8;
           min-height: 100vh;
           font-family: 'Montserrat', sans-serif;
+            padding-top: 70px; /* match your navbar height */
+
         }
 
         /* ── HEADER ── */
@@ -360,6 +361,88 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
   );
 }
 
+function TrainingTracksRenderer({
+  tracks,
+  trainingPlan,
+}: {
+  tracks: import('./Preparation-data').TrainingTrack[];
+  trainingPlan?: import('./Preparation-data').TrainingPhase[];
+}) {
+  const [activeTrack, setActiveTrack] = useState(0);
+  const active = tracks[activeTrack];
+  const phases = activeTrack === 0 && active.phases.length === 0
+    ? (trainingPlan ?? [])
+    : active.phases;
+
+  return (
+    <>
+      {/* Info banner */}
+      <div style={{
+        background: 'rgba(59,130,246,0.08)', border: '1px solid rgba(59,130,246,0.2)',
+        borderRadius: 8, padding: '0.9rem 1.1rem', marginBottom: '1.25rem',
+        display: 'flex', gap: '0.6rem', alignItems: 'flex-start',
+      }}>
+        <span style={{ color: 'rgba(59,130,246,0.7)', fontSize: '0.85rem', flexShrink: 0, marginTop: 1 }}>ⓘ</span>
+        <p style={{ margin: 0, fontSize: '0.8rem', color: 'rgba(59,130,246,0.85)', lineHeight: 1.7 }}>
+          {tracks[0].description}
+        </p>
+      </div>
+
+      {/* Toggle buttons */}
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem' }}>
+        {tracks.map((t, i) => (
+          <button
+            key={i}
+            onClick={() => setActiveTrack(i)}
+            style={{
+              all: 'unset', cursor: 'pointer',
+              padding: '0.5rem 1.1rem', borderRadius: 6, fontSize: '0.8rem', fontWeight: 600,
+              border: activeTrack === i ? '2px solid #f5f0e8' : '1px solid #2e2e2e',
+              background: activeTrack === i ? 'transparent' : 'transparent',
+              color: activeTrack === i ? '#f5f0e8' : 'rgba(245,240,232,0.35)',
+              transition: 'all 0.15s',
+            }}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Active track description */}
+      <div style={{
+        background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.15)',
+        borderRadius: 8, padding: '0.9rem 1.1rem', marginBottom: '1.25rem',
+        display: 'flex', gap: '0.6rem', alignItems: 'flex-start',
+      }}>
+        <span style={{ fontSize: '0.9rem', flexShrink: 0 }}>🚶</span>
+        <p style={{ margin: 0, fontSize: '0.8rem', color: 'rgba(59,130,246,0.85)', lineHeight: 1.7 }}>
+          {active.description || tracks[0].description}
+        </p>
+      </div>
+
+      {/* Phases */}
+      {phases.map((phase, i) => (
+        <div key={i} className="pg-phase">
+          <div className="pg-phase-header">
+            <div className="pg-phase-eyebrow">{phase.phase}</div>
+            <h3 className="pg-phase-title">{phase.title}</h3>
+            <p className="pg-phase-desc">{phase.description}</p>
+          </div>
+          {phase.days.map((day, j) => (
+            <div key={j} className="pg-day-row">
+              <span className="pg-day-label">{day.label}</span>
+              <div className="pg-day-content">
+                <div className="pg-day-activity">{day.activity}</div>
+                {day.note && <div className="pg-day-note">{day.note}</div>}
+              </div>
+            </div>
+          ))}
+        </div>
+      ))}
+    </>
+  );
+}
+
 /* ── SECTION RENDERER ─────────────────────────────────────────────────── */
 
 function SectionContent({ content }: { content: PrepContent }) {
@@ -423,6 +506,33 @@ function SectionContent({ content }: { content: PrepContent }) {
       ))}
 
       {/* RISKS */}
+      {/* PANELS */}
+{(content.panels?.length ?? 0) > 0 && (
+  <div className={content.panels!.length === 3 ? 'pg-three-col' : 'pg-two-col'}>
+    {content.panels!.map((panel, i) => (
+      <div key={i} className="pg-nut-panel">
+        <div className="pg-nut-panel-head">
+          <span className="pg-nut-panel-title">{panel.heading}</span>
+        </div>
+
+        {panel.items.map((item, j) => (
+          <div key={j} className="pg-nut-item">
+            <span className="pg-nut-dot" />
+            <div>
+              <div className="pg-nut-item-title">
+                {item.title}
+              </div>
+              <div className="pg-nut-item-body">
+                {item.body}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+)}
+
       {(content.risks?.length ?? 0) > 0 && (
         <div style={{ marginBottom: '1.25rem' }}>
           <div className="pg-risks-label">⚠ Key risks to be aware of</div>
@@ -441,7 +551,13 @@ function SectionContent({ content }: { content: PrepContent }) {
       )}
 
       {/* TRAINING PLAN */}
-      {content.training_plan?.map((phase, i) => (
+ {/* TRAINING TRACKS (toggled) */}
+      {(content.training_tracks?.length ?? 0) > 0 && (
+        <TrainingTracksRenderer tracks={content.training_tracks!} trainingPlan={content.training_plan} />
+      )}
+
+      {/* TRAINING PLAN (no tracks) */}
+      {!content.training_tracks && content.training_plan?.map((phase, i) => (
         <div key={i} className="pg-phase">
           <div className="pg-phase-header">
             <div className="pg-phase-eyebrow">{phase.phase}</div>
@@ -486,14 +602,14 @@ function SectionContent({ content }: { content: PrepContent }) {
           {content.nutrition.snacks && (
             <div className="pg-snacks">
               <div className="pg-snacks-head">
-                <span className="pg-snacks-icon">⚡</span>
+              
                 <span className="pg-snacks-title">Trail and high-camp snacks</span>
               </div>
               <p className="pg-snacks-intro">{content.nutrition.snacks.intro}</p>
               <div className="pg-snacks-grid">
                 {content.nutrition.snacks.items.map((item, i) => (
                   <div key={i} className="pg-snack-chip">
-                    <span className="pg-snack-bolt">⚡</span>
+                   
                     {item}
                   </div>
                 ))}

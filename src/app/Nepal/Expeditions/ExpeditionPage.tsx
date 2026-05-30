@@ -36,6 +36,7 @@ export type TrekData = {
   ctaText?: string;
   price?: string;
   experts?: ExpertData[];
+  prepGuide?: string;
 };
 
 // ── DEFAULT EXPERTS (fallback if none provided) ───────────────────────────────
@@ -113,9 +114,10 @@ function ExpertAvatar({
 
 // ── SIDEBAR ───────────────────────────────────────────────────────────────────
 
-function Sidebar({ price, experts }: { price?: string; experts: ExpertData[] }) {
+function Sidebar({ price, experts, prepGuide }: { price?: string; experts: ExpertData[]; prepGuide?: string }) {
   const [activeIdx, setActiveIdx] = useState(Math.min(2, experts.length - 1));
   const active = experts[activeIdx];
+  const prepSlug = prepGuide ?? 'expeditions';
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -194,7 +196,7 @@ function Sidebar({ price, experts }: { price?: string; experts: ExpertData[] }) 
 
       {/* Prep guide */}
       <div className="sb-card sb-prep-card">
-        <Link href="/preparation-guide" className="sb-prep-btn">
+        <Link href={`/Nepal/Preparation/${prepSlug}`} className="sb-prep-btn">
           <span style={{ fontSize: '1.05rem' }}>📋</span>
           Preparation Guide
         </Link>
@@ -209,7 +211,7 @@ function Sidebar({ price, experts }: { price?: string; experts: ExpertData[] }) 
 export default function ExpeditionPage({ data }: { data: TrekData }) {
   const cta      = data.ctaText ?? data.title.split(' ')[0];
   const included = (data.included && data.included.length > 0) ? data.included : INCLUDED;
-const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : EXCLUDED;
+  const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : EXCLUDED;
   const notes    = data.notes ?? [];
   const experts  = data.experts ?? DEFAULT_EXPERTS;
 
@@ -246,7 +248,8 @@ const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : E
         }
         .tp-hero-main { height: 100%; overflow: hidden; }
         .tp-hero-side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; overflow: hidden; }
-.tp-hero-main img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }        .tp-hero-side img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
+        .tp-hero-main img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
+        .tp-hero-side img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 0; }
 
         /* ── OUTER LAYOUT ── */
         .tp-outer {
@@ -544,7 +547,7 @@ const excluded = (data.excluded && data.excluded.length > 0) ? data.excluded : E
 
         {/* RIGHT COLUMN — Sidebar */}
         <div className="tp-sidebar">
-          <Sidebar price={data.price} experts={experts} />
+          <Sidebar price={data.price} experts={experts} prepGuide={data.prepGuide} />
         </div>
 
       </div>{/* /tp-outer */}
