@@ -351,7 +351,7 @@ export default function Footer() {
           <h4 className="ft-col-title">Destinations</h4>
           <ul className="ft-col-list">
             <li>
-              <Link href="/nepal" className="ft-col-link">Nepal</Link>
+              <Link href="/Nepal" className="ft-col-link">Nepal</Link>
             </li>
           </ul>
         </div>
