@@ -8,5 +8,4 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
   const { slug } = use(params);
   const data = expeditions[slug];
   if (!data) notFound();
-  return <ExpeditionPage data={data} />;
-}
+return <ExpeditionPage data={{ ...data, slug }} />;}

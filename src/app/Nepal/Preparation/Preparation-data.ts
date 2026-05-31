@@ -641,37 +641,110 @@ export const prepGuides: Record<string, PrepGuideData> = {
         }
       },
       {
+        id: "gear",
+        label: "Gear & packing",
+        content: {
+          gear: {
+            legend: { show: true },
+            categories: [
+              {
+                category: "CLIMBING HARDWARE (TECHNICAL)",
+                items: [
+                  { name: "Mountaineering boots (double or single insulated, crampon-compatible)", note: "Must be broken in — do not arrive with new boots", badge: "bring your own" },
+                  { name: "Crampons (12-point, technical mountaineering grade)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Ice axe (technical, 55–65cm)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Climbing harness (sit harness, adjustable)", badge: "additional cost" },
+                  { name: "Jumar / ascender (rope ascending device)", badge: "additional cost" },
+                  { name: "Locking carabiners (×4 minimum)", badge: "additional cost" },
+                  { name: "Prussik loops (×2) and belay device", badge: "additional cost" },
+                  { name: "Helmet (climbing grade)", badge: "additional cost" }
+                ]
+              },
+              {
+                category: "CLOTHING — HIGH ALTITUDE",
+                items: [
+                  { name: "Down suit or high-altitude down jacket + salopettes (rated −25°C or below)", note: "NHA provides a high-quality down jacket for the expedition", badge: "provided by NHA" },
+                  { name: "Sleeping bag (rated −30°C expedition grade)", note: "NHA provides expedition sleeping bag — returned after trip", badge: "provided by NHA" },
+                  { name: "Waterproof hardshell jacket and pants (Gore-Tex or equivalent)", badge: "bring your own" },
+                  { name: "Mid layer fleece (×2) and thermal base layers (×3 merino wool)", badge: "bring your own" },
+                  { name: "High-altitude gloves (expedition mitts + liner gloves)", badge: "bring your own" },
+                  { name: "Balaclava and warm beanie", note: "NHA beanie provided on arrival", badge: "provided by NHA" },
+                  { name: "Neck gaiter / Buff", note: "NHA Buff provided on arrival", badge: "provided by NHA" },
+                  { name: "Trekking pants (×2 lightweight), hiking shirts (×3–4), thermal socks (×4 pairs)", badge: "bring your own" }
+                ]
+              },
+              {
+                category: "PACK, SHELTER & SAFETY",
+                items: [
+                  { name: "NHA duffel bag (porter bag)", note: "Provided by NHA in your welcome kit", badge: "provided by NHA" },
+                  { name: "Summit pack / climbing pack (30–35L)", badge: "bring your own" },
+                  { name: "Trekking poles (×2, collapsible)", badge: "bring your own" },
+                  { name: "Headtorch (expedition grade, rated −20°C) + spare batteries", badge: "bring your own" },
+                  { name: "Glacier UV400 goggles with side shields (full wraparound)", badge: "bring your own" },
+                  { name: "Wide-mouth insulated flask (Nalgene style, 1L ×2)", note: "Store upside down in pack — water freezes top-down keeping threads clear", badge: "bring your own" },
+                  { name: "Oral rehydration salts / high-sodium electrolyte tablets", badge: "bring your own" },
+                  { name: "Chemical toe/hand warmers (×10 pairs minimum)", badge: "bring your own" },
+                  { name: "SPF 50+ sunscreen and high-altitude lip balm", badge: "bring your own" },
+                  { name: "Power bank (20,000mAh+), dry bags for electronics", badge: "bring your own" },
+                  { name: "NHA trekking map and trip completion certificate", note: "Provided in NHA welcome kit", badge: "provided by NHA" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
         id: "nutrition",
         label: "Nutrition",
         content: {
           nutrition: {
             panels: [
               {
-                heading: "High-Altitude Nutrition & Hydration Strategy",
+                heading: "First-Timer Trail Nutrition & Hydration Strategy (Preparation Months)",
                 items: [
-                  {
-                    title: "1. Phase One: During Preparation (At Home)",
-                    body: "Protein for Repair: Aim for 1.2 to 2.0 grams of protein per kilogram of body weight daily to support muscle synthesis as your training volume scales up. Carbohydrate Strategy: Prioritize complex carbohydrates (oats, brown rice, sweet potatoes, whole grains). On your long weekend hike days, slightly increase carbohydrate intake to fully fuel extended physical performance. Hydration Baseline: Drink 30--35 ml of water per kilogram of body weight daily. Dehydration during training severely delays muscle recovery."
-                  },
-                  {
-                    title: "On-Trail High-Altitude Protocol",
-                    body: "On these classic valley and ridge routes, metabolic demands increase due to crisp mountain air, rugged terrain, and altitude shifts. At elevations above 3,000 meters, your body changes how it processes nutrients."
-                  },
-                  {
-                    title: "Carbohydrates (The Preferred Fuel):",
-                    body: "Under oxygen-depleted conditions, your body burns carbohydrates much more efficiently than fats or proteins. Lean heavily on local freshly cooked foods available along the route, such as grains, rice, potatoes, porridge, and pasta."
-                  },
-                  {
-                    title: "Protein (Muscle Maintenance):",
-                    body: "To prevent muscle wasting over consecutive trekking days, consistently consume local fresh eggs, lentil/bean stews, or supplementary protein bars brought from home."
-                  },
-                  {
-                    title: "Fats & Quick Calories (Combating Altitude Appetite Loss):",
-                    body: "High altitude can naturally suppress appetite. When a large meal sounds unappealing, rely on calorie-dense, easily consumable trail snacks like nuts, seeds, nut butter packets, and dried fruit during short breaks."
-                  },
-                ],
+                  { title: "The Protein Foundation:", body: "Eat a little more clean protein (chicken, fish, eggs, tofu, lentils) during your training weeks. Your leg muscles are breaking down and rebuilding to become stronger; they need protein to do that." },
+                  { title: "Hydrate Early:", body: "Do not wait until you are on the mountain to form good habits. Drink at least 2.5 liters of water daily during your preparation months." }
+                ]
               },
+              {
+                heading: "While on the Trek",
+                items: [
+                  { title: "The First-Timer Hydration Law:", body: "Cool Mountain Air → Suppressed Thirst Sensation → Forget to Drink → Thick Blood & Mimicked Altitude Sickness → The Fix: Force 4 Liters Daily + Electrolytes (Even with Zero Thirst)." },
+                  { title: "Carbohydrates are Your Best Friend:", body: "When walking uphill in thin mountain air, your body burns carbohydrates much faster and more efficiently than fats or protein. Enjoy the local lodge food: plates of rice, pasta, potatoes, porridge, and bread are the cleanest fuels for your muscles." },
+                  { title: "Pack \"Joy Food\" and Fuel Bars:", body: "High altitude naturally reduces your appetite and can cause mild nausea. Bring a handful of your favorite snacks from home (candy bars, nuts, or energy bars). When a full meal looks unappealing, these familiar snacks will keep your energy from crashing." },
+                  { title: "The 4-Liter Hydration Rule:", body: "You will lose a massive amount of water just by breathing the crisp, dry mountain air. Drink 4 liters of fluid every single day. This includes hot teas, garlic soups, and clean water." },
+                  { title: "Use Electrolytes:", body: "Add an oral rehydration salt packet or an electrolyte tablet to at least one of your water bottles each day. It replaces the essential salts you sweat out and helps prevent cramping." }
+                ]
+              },
+              {
+                heading: "Mountaineering Nutrition & Hydration Strategy (Phase One: During Preparation at Home)",
+                items: [
+                  { title: "Protein for Mass Repair:", body: "Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to rebuild structural muscle fibers broken down by weighted stepping and heavy rucking." },
+                  { title: "Glycogen Habituation:", body: "Focus purely on complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your digestive tract to process fuel under physical stress." },
+                  { title: "Hydration Baseline:", body: "Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks in a dehydrated state causes premature muscle cramping and severely delays recovery." }
+                ]
+              },
+              {
+                heading: "On-Trail & High-Camp Strategy",
+                items: [
+                  { title: "Approach Trek Fuel (Lodges):", body: "Eat large, carbohydrate-dense meals provided by the lodges (Dal Bhat, garlic pasta, porridge, and potatoes). Avoid meat products above Namche Bazaar or Manang to eliminate the risk of foodborne illnesses from un-refrigerated transport." },
+                  { title: "High-Camp & Summit Day Fuel:", body: "Above 5,000m, altitude sickness and physical exhaustion severely suppress your appetite. You must switch to calorie-dense, easily digestible options that don't require heavy chewing: Energy Gels & Chews (instant, simple carbohydrates for steep summit pitches), Powdered Carbohydrate Drinks (mixing cyclic dextrin or sports drinks into your water bottles provides clean energy when solid food causes nausea), Calorie-Dense Comfort Packables (Snickers bars, peanut butter packets, marzipan, and dried fruits that do not freeze solid)." }
+                ]
+              }
             ],
+            snacks: {
+              intro: "Base Camp meals are provided by NHA's cook. For Camp 1, Camp 2, and the summit push you will rely on your own high-energy snacks and the NHA high-altitude food pack (available as an additional).",
+              items: [
+                "Energy gels and liquid calories",
+                "Cyclic dextrin powder drink mix",
+                "Dark chocolate (70%+)",
+                "Peanut butter sachets",
+                "Marzipan (does not freeze)",
+                "Freeze-dried meals (high camps)",
+                "Electrolyte tablets",
+                "Mixed nuts and seeds"
+              ],
+            },
           },
         },
       },
@@ -905,47 +978,110 @@ export const prepGuides: Record<string, PrepGuideData> = {
         },
       },
       {
-        id: 'nutrition',
-        label: 'Nutrition',
+        id: "gear",
+        label: "Gear & packing",
+        content: {
+          gear: {
+            legend: { show: true },
+            categories: [
+              {
+                category: "CLIMBING HARDWARE (TECHNICAL)",
+                items: [
+                  { name: "Mountaineering boots (double or single insulated, crampon-compatible)", note: "Must be broken in — do not arrive with new boots", badge: "bring your own" },
+                  { name: "Crampons (12-point, technical mountaineering grade)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Ice axe (technical, 55–65cm)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Climbing harness (sit harness, adjustable)", badge: "additional cost" },
+                  { name: "Jumar / ascender (rope ascending device)", badge: "additional cost" },
+                  { name: "Locking carabiners (×4 minimum)", badge: "additional cost" },
+                  { name: "Prussik loops (×2) and belay device", badge: "additional cost" },
+                  { name: "Helmet (climbing grade)", badge: "additional cost" }
+                ]
+              },
+              {
+                category: "CLOTHING — HIGH ALTITUDE",
+                items: [
+                  { name: "Down suit or high-altitude down jacket + salopettes (rated −25°C or below)", note: "NHA provides a high-quality down jacket for the expedition", badge: "provided by NHA" },
+                  { name: "Sleeping bag (rated −30°C expedition grade)", note: "NHA provides expedition sleeping bag — returned after trip", badge: "provided by NHA" },
+                  { name: "Waterproof hardshell jacket and pants (Gore-Tex or equivalent)", badge: "bring your own" },
+                  { name: "Mid layer fleece (×2) and thermal base layers (×3 merino wool)", badge: "bring your own" },
+                  { name: "High-altitude gloves (expedition mitts + liner gloves)", badge: "bring your own" },
+                  { name: "Balaclava and warm beanie", note: "NHA beanie provided on arrival", badge: "provided by NHA" },
+                  { name: "Neck gaiter / Buff", note: "NHA Buff provided on arrival", badge: "provided by NHA" },
+                  { name: "Trekking pants (×2 lightweight), hiking shirts (×3–4), thermal socks (×4 pairs)", badge: "bring your own" }
+                ]
+              },
+              {
+                category: "PACK, SHELTER & SAFETY",
+                items: [
+                  { name: "NHA duffel bag (porter bag)", note: "Provided by NHA in your welcome kit", badge: "provided by NHA" },
+                  { name: "Summit pack / climbing pack (30–35L)", badge: "bring your own" },
+                  { name: "Trekking poles (×2, collapsible)", badge: "bring your own" },
+                  { name: "Headtorch (expedition grade, rated −20°C) + spare batteries", badge: "bring your own" },
+                  { name: "Glacier UV400 goggles with side shields (full wraparound)", badge: "bring your own" },
+                  { name: "Wide-mouth insulated flask (Nalgene style, 1L ×2)", note: "Store upside down in pack — water freezes top-down keeping threads clear", badge: "bring your own" },
+                  { name: "Oral rehydration salts / high-sodium electrolyte tablets", badge: "bring your own" },
+                  { name: "Chemical toe/hand warmers (×10 pairs minimum)", badge: "bring your own" },
+                  { name: "SPF 50+ sunscreen and high-altitude lip balm", badge: "bring your own" },
+                  { name: "Power bank (20,000mAh+), dry bags for electronics", badge: "bring your own" },
+                  { name: "NHA trekking map and trip completion certificate", note: "Provided in NHA welcome kit", badge: "provided by NHA" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        id: "nutrition",
+        label: "Nutrition",
         content: {
           nutrition: {
             panels: [
               {
-                heading: 'During Preparation at Home',
+                heading: "First-Timer Trail Nutrition & Hydration Strategy (Preparation Months)",
                 items: [
-                  {
-                    title: 'Protein Synthesis',
-                    body: 'Consume 1.4 to 2.0 grams of protein per kilogram of body weight daily to repair damaged muscle fibers as your training and pack weight scale up.',
-                  },
-                  {
-                    title: 'Glycogen Management',
-                    body: 'Prioritize high-quality complex carbohydrates — oats, brown rice, sweet potatoes, quinoa. Increase carbohydrate intake by 20% the night before and the morning of your long weekend simulation hikes.',
-                  },
-                  {
-                    title: 'Hydration Habituation',
-                    body: 'Drink 35 ml of water per kilogram of body weight daily. Training in a dehydrated state forces your heart to work significantly harder to pump thick blood.',
-                  },
-                ],
+                  { title: "The Protein Foundation:", body: "Eat a little more clean protein (chicken, fish, eggs, tofu, lentils) during your training weeks. Your leg muscles are breaking down and rebuilding to become stronger; they need protein to do that." },
+                  { title: "Hydrate Early:", body: "Do not wait until you are on the mountain to form good habits. Drink at least 2.5 liters of water daily during your preparation months." }
+                ]
               },
               {
-                heading: 'On-Trail High-Altitude Protocol',
-                description: 'Once you cross 3,000m on any of these circuits, your basal metabolic rate increases drastically due to constant systemic stress from cold weather and hypoxia. Carbohydrates become your primary fuel while appetite is suppressed — requiring caloric density.',
+                heading: "While on the Trek",
                 items: [
-                  {
-                    title: 'Carbohydrates — The Non-Negotiable Fuel',
-                    body: 'At high altitudes, burning fat requires more oxygen than burning carbohydrates. Your body needs carbs to survive. Rely heavily on calorie-dense carbs served at high-altitude tea houses: porridge, rice plates, pasta, and potatoes.',
-                  },
-                  {
-                    title: 'Protein Balance',
-                    body: 'Eat clean protein options like eggs, bean or lentil stews, or cheese at every stop. Bring high-quality protein bars from home to preserve muscle tissue over consecutive days of heavy climbing.',
-                  },
-                  {
-                    title: 'Micro-Snacking for Appetite Loss',
-                    body: 'Extreme altitude suppresses hunger hormones. When large meals look unappealing, force-feed small calorie-dense snacks every 60 minutes on the trail — nuts, peanut butter packets, chocolate, and dried fruit.',
-                  },
-                ],
+                  { title: "The First-Timer Hydration Law:", body: "Cool Mountain Air → Suppressed Thirst Sensation → Forget to Drink → Thick Blood & Mimicked Altitude Sickness → The Fix: Force 4 Liters Daily + Electrolytes (Even with Zero Thirst)." },
+                  { title: "Carbohydrates are Your Best Friend:", body: "When walking uphill in thin mountain air, your body burns carbohydrates much faster and more efficiently than fats or protein. Enjoy the local lodge food: plates of rice, pasta, potatoes, porridge, and bread are the cleanest fuels for your muscles." },
+                  { title: "Pack \"Joy Food\" and Fuel Bars:", body: "High altitude naturally reduces your appetite and can cause mild nausea. Bring a handful of your favorite snacks from home (candy bars, nuts, or energy bars). When a full meal looks unappealing, these familiar snacks will keep your energy from crashing." },
+                  { title: "The 4-Liter Hydration Rule:", body: "You will lose a massive amount of water just by breathing the crisp, dry mountain air. Drink 4 liters of fluid every single day. This includes hot teas, garlic soups, and clean water." },
+                  { title: "Use Electrolytes:", body: "Add an oral rehydration salt packet or an electrolyte tablet to at least one of your water bottles each day. It replaces the essential salts you sweat out and helps prevent cramping." }
+                ]
               },
+              {
+                heading: "Mountaineering Nutrition & Hydration Strategy (Phase One: During Preparation at Home)",
+                items: [
+                  { title: "Protein for Mass Repair:", body: "Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to rebuild structural muscle fibers broken down by weighted stepping and heavy rucking." },
+                  { title: "Glycogen Habituation:", body: "Focus purely on complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your digestive tract to process fuel under physical stress." },
+                  { title: "Hydration Baseline:", body: "Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks in a dehydrated state causes premature muscle cramping and severely delays recovery." }
+                ]
+              },
+              {
+                heading: "On-Trail & High-Camp Strategy",
+                items: [
+                  { title: "Approach Trek Fuel (Lodges):", body: "Eat large, carbohydrate-dense meals provided by the lodges (Dal Bhat, garlic pasta, porridge, and potatoes). Avoid meat products above Namche Bazaar or Manang to eliminate the risk of foodborne illnesses from un-refrigerated transport." },
+                  { title: "High-Camp & Summit Day Fuel:", body: "Above 5,000m, altitude sickness and physical exhaustion severely suppress your appetite. You must switch to calorie-dense, easily digestible options that don't require heavy chewing: Energy Gels & Chews (instant, simple carbohydrates for steep summit pitches), Powdered Carbohydrate Drinks (mixing cyclic dextrin or sports drinks into your water bottles provides clean energy when solid food causes nausea), Calorie-Dense Comfort Packables (Snickers bars, peanut butter packets, marzipan, and dried fruits that do not freeze solid)." }
+                ]
+              }
             ],
+            snacks: {
+              intro: "Base Camp meals are provided by NHA's cook. For Camp 1, Camp 2, and the summit push you will rely on your own high-energy snacks and the NHA high-altitude food pack (available as an additional).",
+              items: [
+                "Energy gels and liquid calories",
+                "Cyclic dextrin powder drink mix",
+                "Dark chocolate (70%+)",
+                "Peanut butter sachets",
+                "Marzipan (does not freeze)",
+                "Freeze-dried meals (high camps)",
+                "Electrolyte tablets",
+                "Mixed nuts and seeds"
+              ],
+            },
           },
         },
       },
@@ -1162,40 +1298,113 @@ export const prepGuides: Record<string, PrepGuideData> = {
       },
     },
     {
-      id: 'nutrition',
-      label: 'Nutrition',
-      content: {
-        nutrition: {
-          panels: [
-            {
-              heading: 'High-Altitude Nutrition & Hydration Strategy',
+        id: "gear",
+        label: "Gear & packing",
+        content: {
+          gear: {
+            legend: { show: true },
+            categories: [
+              {
+                category: "CLIMBING HARDWARE (TECHNICAL)",
+                items: [
+                  { name: "Mountaineering boots (double or single insulated, crampon-compatible)", note: "Must be broken in — do not arrive with new boots", badge: "bring your own" },
+                  { name: "Crampons (12-point, technical mountaineering grade)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Ice axe (technical, 55–65cm)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Climbing harness (sit harness, adjustable)", badge: "additional cost" },
+                  { name: "Jumar / ascender (rope ascending device)", badge: "additional cost" },
+                  { name: "Locking carabiners (×4 minimum)", badge: "additional cost" },
+                  { name: "Prussik loops (×2) and belay device", badge: "additional cost" },
+                  { name: "Helmet (climbing grade)", badge: "additional cost" }
+                ]
+              },
+              {
+                category: "CLOTHING — HIGH ALTITUDE",
+                items: [
+                  { name: "Down suit or high-altitude down jacket + salopettes (rated −25°C or below)", note: "NHA provides a high-quality down jacket for the expedition", badge: "provided by NHA" },
+                  { name: "Sleeping bag (rated −30°C expedition grade)", note: "NHA provides expedition sleeping bag — returned after trip", badge: "provided by NHA" },
+                  { name: "Waterproof hardshell jacket and pants (Gore-Tex or equivalent)", badge: "bring your own" },
+                  { name: "Mid layer fleece (×2) and thermal base layers (×3 merino wool)", badge: "bring your own" },
+                  { name: "High-altitude gloves (expedition mitts + liner gloves)", badge: "bring your own" },
+                  { name: "Balaclava and warm beanie", note: "NHA beanie provided on arrival", badge: "provided by NHA" },
+                  { name: "Neck gaiter / Buff", note: "NHA Buff provided on arrival", badge: "provided by NHA" },
+                  { name: "Trekking pants (×2 lightweight), hiking shirts (×3–4), thermal socks (×4 pairs)", badge: "bring your own" }
+                ]
+              },
+              {
+                category: "PACK, SHELTER & SAFETY",
+                items: [
+                  { name: "NHA duffel bag (porter bag)", note: "Provided by NHA in your welcome kit", badge: "provided by NHA" },
+                  { name: "Summit pack / climbing pack (30–35L)", badge: "bring your own" },
+                  { name: "Trekking poles (×2, collapsible)", badge: "bring your own" },
+                  { name: "Headtorch (expedition grade, rated −20°C) + spare batteries", badge: "bring your own" },
+                  { name: "Glacier UV400 goggles with side shields (full wraparound)", badge: "bring your own" },
+                  { name: "Wide-mouth insulated flask (Nalgene style, 1L ×2)", note: "Store upside down in pack — water freezes top-down keeping threads clear", badge: "bring your own" },
+                  { name: "Oral rehydration salts / high-sodium electrolyte tablets", badge: "bring your own" },
+                  { name: "Chemical toe/hand warmers (×10 pairs minimum)", badge: "bring your own" },
+                  { name: "SPF 50+ sunscreen and high-altitude lip balm", badge: "bring your own" },
+                  { name: "Power bank (20,000mAh+), dry bags for electronics", badge: "bring your own" },
+                  { name: "NHA trekking map and trip completion certificate", note: "Provided in NHA welcome kit", badge: "provided by NHA" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+    {
+        id: "nutrition",
+        label: "Nutrition",
+        content: {
+          nutrition: {
+            panels: [
+              {
+                heading: "First-Timer Trail Nutrition & Hydration Strategy (Preparation Months)",
+                items: [
+                  { title: "The Protein Foundation:", body: "Eat a little more clean protein (chicken, fish, eggs, tofu, lentils) during your training weeks. Your leg muscles are breaking down and rebuilding to become stronger; they need protein to do that." },
+                  { title: "Hydrate Early:", body: "Do not wait until you are on the mountain to form good habits. Drink at least 2.5 liters of water daily during your preparation months." }
+                ]
+              },
+              {
+                heading: "While on the Trek",
+                items: [
+                  { title: "The First-Timer Hydration Law:", body: "Cool Mountain Air → Suppressed Thirst Sensation → Forget to Drink → Thick Blood & Mimicked Altitude Sickness → The Fix: Force 4 Liters Daily + Electrolytes (Even with Zero Thirst)." },
+                  { title: "Carbohydrates are Your Best Friend:", body: "When walking uphill in thin mountain air, your body burns carbohydrates much faster and more efficiently than fats or protein. Enjoy the local lodge food: plates of rice, pasta, potatoes, porridge, and bread are the cleanest fuels for your muscles." },
+                  { title: "Pack \"Joy Food\" and Fuel Bars:", body: "High altitude naturally reduces your appetite and can cause mild nausea. Bring a handful of your favorite snacks from home (candy bars, nuts, or energy bars). When a full meal looks unappealing, these familiar snacks will keep your energy from crashing." },
+                  { title: "The 4-Liter Hydration Rule:", body: "You will lose a massive amount of water just by breathing the crisp, dry mountain air. Drink 4 liters of fluid every single day. This includes hot teas, garlic soups, and clean water." },
+                  { title: "Use Electrolytes:", body: "Add an oral rehydration salt packet or an electrolyte tablet to at least one of your water bottles each day. It replaces the essential salts you sweat out and helps prevent cramping." }
+                ]
+              },
+              {
+                heading: "Mountaineering Nutrition & Hydration Strategy (Phase One: During Preparation at Home)",
+                items: [
+                  { title: "Protein for Mass Repair:", body: "Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to rebuild structural muscle fibers broken down by weighted stepping and heavy rucking." },
+                  { title: "Glycogen Habituation:", body: "Focus purely on complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your digestive tract to process fuel under physical stress." },
+                  { title: "Hydration Baseline:", body: "Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks in a dehydrated state causes premature muscle cramping and severely delays recovery." }
+                ]
+              },
+              {
+                heading: "On-Trail & High-Camp Strategy",
+                items: [
+                  { title: "Approach Trek Fuel (Lodges):", body: "Eat large, carbohydrate-dense meals provided by the lodges (Dal Bhat, garlic pasta, porridge, and potatoes). Avoid meat products above Namche Bazaar or Manang to eliminate the risk of foodborne illnesses from un-refrigerated transport." },
+                  { title: "High-Camp & Summit Day Fuel:", body: "Above 5,000m, altitude sickness and physical exhaustion severely suppress your appetite. You must switch to calorie-dense, easily digestible options that don't require heavy chewing: Energy Gels & Chews (instant, simple carbohydrates for steep summit pitches), Powdered Carbohydrate Drinks (mixing cyclic dextrin or sports drinks into your water bottles provides clean energy when solid food causes nausea), Calorie-Dense Comfort Packables (Snickers bars, peanut butter packets, marzipan, and dried fruits that do not freeze solid)." }
+                ]
+              }
+            ],
+            snacks: {
+              intro: "Base Camp meals are provided by NHA's cook. For Camp 1, Camp 2, and the summit push you will rely on your own high-energy snacks and the NHA high-altitude food pack (available as an additional).",
               items: [
-                {
-                  title: '1. Phase One: During Preparation (At Home)',
-                  body: 'Protein for Deep Tissue Repair: Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to reconstruct muscle fibers broken down by weighted stepping and steep descents. Glycogen Optimization: Focus on high-quality, complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your gut to process fuel under stress. Hydration Baseline: Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks dehydrated causes premature muscle cramps and drastically delays recovery.',
-                },
-                {
-                  title: '2. Phase Two: On-Trail High-Altitude Protocol',
-                  body: 'Crossing high-altitude passes (5,000m+) or trekking to remote lakes like Tilicho (4,919m) scales up your basal metabolic rate significantly due to freezing ambient temperatures, extreme terrain, and severe hypoxia.',
-                },
-                {
-                  title: 'Carbohydrates (The Essential Oxygen Saver):',
-                  body: 'In low-oxygen zones, your body requires less oxygen to convert carbohydrates into energy than it does for fats or proteins. Do not restrict carbs. Eat massive, clean portions of local high-altitude fuel: Dal Bhat (lentils and rice), potatoes, garlic pasta, Sherpa stews, and porridge.',
-                },
-                {
-                  title: 'Protein Preservation:',
-                  body: 'Keep muscle wasting at bay during multi-week high-pass circuits by consistently eating fresh eggs, chickpea/lentil dishes, yak cheese, or high-density protein bars packed from home.',
-                },
-                {
-                  title: 'Micro-Snacking Against Anorexia (Altitude Appetite Loss):',
-                  body: 'Severe elevations disrupt hunger-regulating hormones. You cannot rely on your natural appetite. You must force yourself to eat small, high-calorie snacks (energy gels, nut butter packets, nuts, and dried fruits) every 45 to 60 minutes of movement.',
-                },
+                "Energy gels and liquid calories",
+                "Cyclic dextrin powder drink mix",
+                "Dark chocolate (70%+)",
+                "Peanut butter sachets",
+                "Marzipan (does not freeze)",
+                "Freeze-dried meals (high camps)",
+                "Electrolyte tablets",
+                "Mixed nuts and seeds"
               ],
             },
-          ],
+          },
         },
       },
-    },
   ],
 },
 
@@ -1409,40 +1618,113 @@ export const prepGuides: Record<string, PrepGuideData> = {
       },
     },
     {
-      id: 'nutrition',
-      label: 'Nutrition',
-      content: {
-        nutrition: {
-          panels: [
-            {
-              heading: 'Wilderness Expedition Nutrition & Hydration Strategy',
+        id: "gear",
+        label: "Gear & packing",
+        content: {
+          gear: {
+            legend: { show: true },
+            categories: [
+              {
+                category: "CLIMBING HARDWARE (TECHNICAL)",
+                items: [
+                  { name: "Mountaineering boots (double or single insulated, crampon-compatible)", note: "Must be broken in — do not arrive with new boots", badge: "bring your own" },
+                  { name: "Crampons (12-point, technical mountaineering grade)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Ice axe (technical, 55–65cm)", note: "Available via NHA rental at additional cost", badge: "additional cost" },
+                  { name: "Climbing harness (sit harness, adjustable)", badge: "additional cost" },
+                  { name: "Jumar / ascender (rope ascending device)", badge: "additional cost" },
+                  { name: "Locking carabiners (×4 minimum)", badge: "additional cost" },
+                  { name: "Prussik loops (×2) and belay device", badge: "additional cost" },
+                  { name: "Helmet (climbing grade)", badge: "additional cost" }
+                ]
+              },
+              {
+                category: "CLOTHING — HIGH ALTITUDE",
+                items: [
+                  { name: "Down suit or high-altitude down jacket + salopettes (rated −25°C or below)", note: "NHA provides a high-quality down jacket for the expedition", badge: "provided by NHA" },
+                  { name: "Sleeping bag (rated −30°C expedition grade)", note: "NHA provides expedition sleeping bag — returned after trip", badge: "provided by NHA" },
+                  { name: "Waterproof hardshell jacket and pants (Gore-Tex or equivalent)", badge: "bring your own" },
+                  { name: "Mid layer fleece (×2) and thermal base layers (×3 merino wool)", badge: "bring your own" },
+                  { name: "High-altitude gloves (expedition mitts + liner gloves)", badge: "bring your own" },
+                  { name: "Balaclava and warm beanie", note: "NHA beanie provided on arrival", badge: "provided by NHA" },
+                  { name: "Neck gaiter / Buff", note: "NHA Buff provided on arrival", badge: "provided by NHA" },
+                  { name: "Trekking pants (×2 lightweight), hiking shirts (×3–4), thermal socks (×4 pairs)", badge: "bring your own" }
+                ]
+              },
+              {
+                category: "PACK, SHELTER & SAFETY",
+                items: [
+                  { name: "NHA duffel bag (porter bag)", note: "Provided by NHA in your welcome kit", badge: "provided by NHA" },
+                  { name: "Summit pack / climbing pack (30–35L)", badge: "bring your own" },
+                  { name: "Trekking poles (×2, collapsible)", badge: "bring your own" },
+                  { name: "Headtorch (expedition grade, rated −20°C) + spare batteries", badge: "bring your own" },
+                  { name: "Glacier UV400 goggles with side shields (full wraparound)", badge: "bring your own" },
+                  { name: "Wide-mouth insulated flask (Nalgene style, 1L ×2)", note: "Store upside down in pack — water freezes top-down keeping threads clear", badge: "bring your own" },
+                  { name: "Oral rehydration salts / high-sodium electrolyte tablets", badge: "bring your own" },
+                  { name: "Chemical toe/hand warmers (×10 pairs minimum)", badge: "bring your own" },
+                  { name: "SPF 50+ sunscreen and high-altitude lip balm", badge: "bring your own" },
+                  { name: "Power bank (20,000mAh+), dry bags for electronics", badge: "bring your own" },
+                  { name: "NHA trekking map and trip completion certificate", note: "Provided in NHA welcome kit", badge: "provided by NHA" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+    {
+        id: "nutrition",
+        label: "Nutrition",
+        content: {
+          nutrition: {
+            panels: [
+              {
+                heading: "First-Timer Trail Nutrition & Hydration Strategy (Preparation Months)",
+                items: [
+                  { title: "The Protein Foundation:", body: "Eat a little more clean protein (chicken, fish, eggs, tofu, lentils) during your training weeks. Your leg muscles are breaking down and rebuilding to become stronger; they need protein to do that." },
+                  { title: "Hydrate Early:", body: "Do not wait until you are on the mountain to form good habits. Drink at least 2.5 liters of water daily during your preparation months." }
+                ]
+              },
+              {
+                heading: "While on the Trek",
+                items: [
+                  { title: "The First-Timer Hydration Law:", body: "Cool Mountain Air → Suppressed Thirst Sensation → Forget to Drink → Thick Blood & Mimicked Altitude Sickness → The Fix: Force 4 Liters Daily + Electrolytes (Even with Zero Thirst)." },
+                  { title: "Carbohydrates are Your Best Friend:", body: "When walking uphill in thin mountain air, your body burns carbohydrates much faster and more efficiently than fats or protein. Enjoy the local lodge food: plates of rice, pasta, potatoes, porridge, and bread are the cleanest fuels for your muscles." },
+                  { title: "Pack \"Joy Food\" and Fuel Bars:", body: "High altitude naturally reduces your appetite and can cause mild nausea. Bring a handful of your favorite snacks from home (candy bars, nuts, or energy bars). When a full meal looks unappealing, these familiar snacks will keep your energy from crashing." },
+                  { title: "The 4-Liter Hydration Rule:", body: "You will lose a massive amount of water just by breathing the crisp, dry mountain air. Drink 4 liters of fluid every single day. This includes hot teas, garlic soups, and clean water." },
+                  { title: "Use Electrolytes:", body: "Add an oral rehydration salt packet or an electrolyte tablet to at least one of your water bottles each day. It replaces the essential salts you sweat out and helps prevent cramping." }
+                ]
+              },
+              {
+                heading: "Mountaineering Nutrition & Hydration Strategy (Phase One: During Preparation at Home)",
+                items: [
+                  { title: "Protein for Mass Repair:", body: "Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to rebuild structural muscle fibers broken down by weighted stepping and heavy rucking." },
+                  { title: "Glycogen Habituation:", body: "Focus purely on complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your digestive tract to process fuel under physical stress." },
+                  { title: "Hydration Baseline:", body: "Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks in a dehydrated state causes premature muscle cramping and severely delays recovery." }
+                ]
+              },
+              {
+                heading: "On-Trail & High-Camp Strategy",
+                items: [
+                  { title: "Approach Trek Fuel (Lodges):", body: "Eat large, carbohydrate-dense meals provided by the lodges (Dal Bhat, garlic pasta, porridge, and potatoes). Avoid meat products above Namche Bazaar or Manang to eliminate the risk of foodborne illnesses from un-refrigerated transport." },
+                  { title: "High-Camp & Summit Day Fuel:", body: "Above 5,000m, altitude sickness and physical exhaustion severely suppress your appetite. You must switch to calorie-dense, easily digestible options that don't require heavy chewing: Energy Gels & Chews (instant, simple carbohydrates for steep summit pitches), Powdered Carbohydrate Drinks (mixing cyclic dextrin or sports drinks into your water bottles provides clean energy when solid food causes nausea), Calorie-Dense Comfort Packables (Snickers bars, peanut butter packets, marzipan, and dried fruits that do not freeze solid)." }
+                ]
+              }
+            ],
+            snacks: {
+              intro: "Base Camp meals are provided by NHA's cook. For Camp 1, Camp 2, and the summit push you will rely on your own high-energy snacks and the NHA high-altitude food pack (available as an additional).",
               items: [
-                {
-                  title: 'During Preparation (At Home)',
-                  body: 'Protein for Mass Repair: Consume 1.6 to 2.2 grams of protein per kilogram of body weight daily to rebuild structural muscle fibers broken down by weighted stepping and heavy rucking. Glycogen Habituation: Focus purely on complex carbohydrates. Increase your carb intake by 25% for the 24 hours leading up to your long, back-to-back weekend simulation hikes to train your digestive tract to process fuel under physical stress. Hydration Baseline: Drink 35--40 ml of water per kilogram of body weight daily. Entering high-volume training blocks in a dehydrated state causes premature muscle cramping and severely delays recovery.',
-                },
-                {
-                  title: 'On-Trail Wilderness Strategy (Camping vs. Remote Tea Houses)',
-                  body: 'Trekking through extreme wilderness zones like Upper Dolpo, Kanchenjunga, and the Dhaulagiri Circuit radically changes nutrition because you rely on an expedition crew or fixed camp kitchens for long stretches.',
-                },
-                {
-                  title: 'Combating Camp Appetite Fatigue:',
-                  body: 'On fully supported camping treks (like Dhaulagiri or Upper Dolpo), meals are fresh but can become logistically monotonous over 25 days. Pack high-flavor, nutrient-dense personal items from home to stimulate eating when altitude suppresses appetite (e.g., premium electrolyte powders, hot sauces, freeze-dried meat snacks, or high-calorie nut packets).',
-                },
-                {
-                  title: 'Carbohydrates (The Essential Oxygen Saver):',
-                  body: 'In low-oxygen zones, your body requires less oxygen to convert carbohydrates into energy than it does for fats or proteins. Do not restrict carbs. Eat massive, clean portions of fuel provided by the crew: rice, flatbreads, oats, lentil stews, and potatoes.',
-                },
-                {
-                  title: 'Protein Preservation:',
-                  body: 'Keep muscle wasting at bay during long-duration circuits by consistently prioritizing protein sources at camp (eggs, chickpea/lentil dishes, beans) supplemented by your own packed protein bars.',
-                },
+                "Energy gels and liquid calories",
+                "Cyclic dextrin powder drink mix",
+                "Dark chocolate (70%+)",
+                "Peanut butter sachets",
+                "Marzipan (does not freeze)",
+                "Freeze-dried meals (high camps)",
+                "Electrolyte tablets",
+                "Mixed nuts and seeds"
               ],
             },
-          ],
+          },
         },
       },
-    },
   ],
 },
 

@@ -4,6 +4,34 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { INCLUDED, EXCLUDED } from '@/app/Nepal/shared/packagedetails';
 
+const PREP_GUIDE_MAP: Record<string, string> = {
+  'ghorepani-poon-hill-trek-10-days':        'classic-treks',
+  'khopra-danda-trek':                        'classic-treks',
+  'langtang-valley-trek':                     'classic-treks',
+  'mardi-himal-trek':                         'classic-treks',
+  'tsum-valley-trek':                         'classic-treks',
+  'upper-mustang-trek-drive-trek':            'classic-treks',
+  'upper-mustang-trek-17-days':               'classic-treks',
+  'annapurna-base-camp-trek-14-days':         'classic-treks',
+  'everest-base-camp-trek':                   'high-altitude-treks',
+  'annapurna-circuit-trek-16-days':           'high-altitude-treks',
+  'gokyo-lakes-trek':                         'high-altitude-treks',
+  'langtang-helambu-trek':                    'high-altitude-treks',
+  'gokyo-to-everest-base-camp-trek':          'high-altitude-treks',
+  'everest-three-passes-trek':                'extreme-high-altitude-treks',
+  'gokyo-renjo-la-pass-trek':                 'extreme-high-altitude-treks',
+  'everest-high-passes-island-peak':          'extreme-high-altitude-treks',
+  'langtang-valley-ganja-la-pass-trek':       'extreme-high-altitude-treks',
+  'kanchenjunga-base-camp-trek-23-days':      'wilderness-expeditions',
+  'kanchenjunga-base-camp-trek-22-days':      'wilderness-expeditions',
+  'upper-dolpo-trek':                         'wilderness-expeditions',
+  'manaslu-circuit-trek':                     'wilderness-expeditions',
+  'manaslu-tsum-valley-trek':                 'wilderness-expeditions',
+  'dhaulagiri-circuit-trek':                  'wilderness-expeditions',
+  'nar-phu-valley-annapurna-circuit-trek':    'wilderness-expeditions',
+  'annapurna-circuit-tilicho-lake-trek':      'extreme-high-altitude-treks',
+};
+
 // ── TYPES ─────────────────────────────────────────────────────────────────────
 
 export type ExpertData = {
@@ -37,6 +65,7 @@ export type TrekData = {
   price?: string;
   experts?: ExpertData[];
   prepGuide?: string;
+  slug?: string;
 };
 
 // ── DEFAULT EXPERTS (fallback if none provided) ───────────────────────────────
@@ -114,10 +143,12 @@ function ExpertAvatar({
 
 // ── SIDEBAR ───────────────────────────────────────────────────────────────────
 
-function Sidebar({ price, experts, prepGuide }: { price?: string; experts: ExpertData[]; prepGuide?: string }) {
+
+
+function Sidebar({ price, experts, prepGuide, slug }: { price?: string; experts: ExpertData[]; prepGuide?: string; slug?: string }) {
   const [activeIdx, setActiveIdx] = useState(Math.min(2, experts.length - 1));
   const active = experts[activeIdx];
-  const prepSlug = prepGuide ?? 'expeditions';
+  const prepSlug = prepGuide ?? (slug ? PREP_GUIDE_MAP[slug] : undefined) ?? 'expeditions';
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -547,7 +578,7 @@ export default function ExpeditionPage({ data }: { data: TrekData }) {
 
         {/* RIGHT COLUMN — Sidebar */}
         <div className="tp-sidebar">
-          <Sidebar price={data.price} experts={experts} prepGuide={data.prepGuide} />
+          <Sidebar price={data.price} experts={experts} prepGuide={data.prepGuide} slug={data.slug} />
         </div>
 
       </div>{/* /tp-outer */}
