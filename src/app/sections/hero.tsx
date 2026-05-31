@@ -19,7 +19,7 @@ export default function Hero() {
         {/* Eyebrow */}
         <div className="hero-eyebrow hero-fade-up" style={{ animationDelay: '0.2s' }}>
           <span className="hero-line" />
-          <span className="hero-eyebrow-text">Est. 2023 · Kathmandu, Nepal</span>
+          <span className="hero-eyebrow-text">Est. 2022 · Kathmandu, Nepal</span>
           <span className="hero-line" />
         </div>
 
