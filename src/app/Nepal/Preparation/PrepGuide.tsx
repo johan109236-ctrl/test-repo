@@ -21,8 +21,7 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
           color: #f5f0e8;
           min-height: 100vh;
           font-family: 'Montserrat', sans-serif;
-            padding-top: 70px; /* match your navbar height */
-
+          padding-top: 70px;
         }
 
         /* ── HEADER ── */
@@ -30,8 +29,10 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
           background: #111;
           border-bottom: 1px solid #1e1e1e;
           padding: 1.25rem 2rem;
-          display: flex; align-items: center;
-          justify-content: space-between; gap: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
         }
         .pg-logo-area { display: flex; flex-direction: column; gap: 3px; }
         .pg-logo-title {
@@ -67,24 +68,6 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
         }
         .pg-nav-btn:hover { color: rgba(245,240,232,0.65); }
         .pg-nav-btn.active { color: #f5f0e8; border-bottom-color: #c9a84c; }
-
-        /* ── STATS ROW ── */
-        .pg-stats {
-          display: grid; grid-template-columns: repeat(4, 1fr);
-          border-bottom: 1px solid #1e1e1e;
-        }
-        @media (max-width: 640px) { .pg-stats { grid-template-columns: repeat(2, 1fr); } }
-        .pg-stat { padding: 1.35rem 1.75rem; border-right: 1px solid #1e1e1e; }
-        .pg-stat:last-child { border-right: none; }
-        .pg-stat-value {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1.75rem; font-weight: 400; color: #f5f0e8;
-          line-height: 1; margin-bottom: 0.3rem;
-        }
-        .pg-stat-label {
-          font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
-          color: rgba(245,240,232,0.35);
-        }
 
         /* ── BODY ── */
         .pg-body {
@@ -271,7 +254,6 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
           font-size: 0.74rem; color: rgba(245,240,232,0.65); line-height: 1.4;
           display: flex; align-items: center; gap: 0.45rem;
         }
-        .pg-snack-bolt { color: #c9a84c; font-size: 0.7rem; flex-shrink: 0; }
 
         /* ── GEAR ── */
         .pg-gear-legend {
@@ -319,6 +301,31 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
           font-style: italic; margin-top: 2px; line-height: 1.5;
         }
         .pg-gear-badge { flex-shrink: 0; }
+
+        /* ── PANELS (overview) ── */
+        .pg-panels-top {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.25rem;
+          margin-bottom: 1.25rem;
+        }
+        .pg-panels-bottom {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.25rem;
+          margin-bottom: 1.25rem;
+        }
+        @media (max-width: 768px) {
+          .pg-panels-top, .pg-panels-bottom { grid-template-columns: 1fr; }
+        }
+        .pg-nut-panel-desc {
+          font-size: 0.75rem;
+          color: rgba(245,240,232,0.38);
+          line-height: 1.7;
+          margin-bottom: 1rem;
+          padding-bottom: 0.85rem;
+          border-bottom: 1px solid #1e1e1e;
+        }
       `}</style>
 
       {/* HEADER */}
@@ -343,16 +350,6 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
         ))}
       </nav>
 
-      {/* STATS */}
-      <div className="pg-stats">
-        {data.stats.map((s, i) => (
-          <div key={i} className="pg-stat">
-            <div className="pg-stat-value">{s.value}</div>
-            <div className="pg-stat-label">{s.label}</div>
-          </div>
-        ))}
-      </div>
-
       {/* CONTENT */}
       <div className="pg-body">
         <SectionContent content={active.content} />
@@ -360,6 +357,8 @@ export default function PrepGuide({ data }: { data: PrepGuideData }) {
     </main>
   );
 }
+
+/* ── TRAINING TRACKS ─────────────────────────────────────────────────── */
 
 function TrainingTracksRenderer({
   tracks,
@@ -370,9 +369,12 @@ function TrainingTracksRenderer({
 }) {
   const [activeTrack, setActiveTrack] = useState(0);
   const active = tracks[activeTrack];
-  const phases = activeTrack === 0 && active.phases.length === 0
-    ? (trainingPlan ?? [])
-    : active.phases;
+
+  // Track 0 (beginner) falls back to the top-level training_plan array
+  const phases =
+    activeTrack === 0 && active.phases.length === 0
+      ? (trainingPlan ?? [])
+      : active.phases;
 
   return (
     <>
@@ -398,7 +400,6 @@ function TrainingTracksRenderer({
               all: 'unset', cursor: 'pointer',
               padding: '0.5rem 1.1rem', borderRadius: 6, fontSize: '0.8rem', fontWeight: 600,
               border: activeTrack === i ? '2px solid #f5f0e8' : '1px solid #2e2e2e',
-              background: activeTrack === i ? 'transparent' : 'transparent',
               color: activeTrack === i ? '#f5f0e8' : 'rgba(245,240,232,0.35)',
               transition: 'all 0.15s',
             }}
@@ -422,24 +423,32 @@ function TrainingTracksRenderer({
 
       {/* Phases */}
       {phases.map((phase, i) => (
-        <div key={i} className="pg-phase">
-          <div className="pg-phase-header">
-            <div className="pg-phase-eyebrow">{phase.phase}</div>
-            <h3 className="pg-phase-title">{phase.title}</h3>
-            <p className="pg-phase-desc">{phase.description}</p>
-          </div>
-          {phase.days.map((day, j) => (
-            <div key={j} className="pg-day-row">
-              <span className="pg-day-label">{day.label}</span>
-              <div className="pg-day-content">
-                <div className="pg-day-activity">{day.activity}</div>
-                {day.note && <div className="pg-day-note">{day.note}</div>}
-              </div>
-            </div>
-          ))}
-        </div>
+        <TrainingPhaseBlock key={i} phase={phase} />
       ))}
     </>
+  );
+}
+
+/* ── TRAINING PHASE BLOCK ────────────────────────────────────────────── */
+
+function TrainingPhaseBlock({ phase }: { phase: import('./Preparation-data').TrainingPhase }) {
+  return (
+    <div className="pg-phase">
+      <div className="pg-phase-header">
+        <div className="pg-phase-eyebrow">{phase.phase}</div>
+        <h3 className="pg-phase-title">{phase.title}</h3>
+        <p className="pg-phase-desc">{phase.description}</p>
+      </div>
+      {phase.days.map((day, j) => (
+        <div key={j} className="pg-day-row">
+          <span className="pg-day-label">{day.label}</span>
+          <div className="pg-day-content">
+            <div className="pg-day-activity">{day.activity}</div>
+            {day.note && <div className="pg-day-note">{day.note}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -452,10 +461,14 @@ function SectionContent({ content }: { content: PrepContent }) {
     (content.checklist?.length ?? 0) > 0 ||
     (content.risks?.length ?? 0) > 0 ||
     (content.training_plan?.length ?? 0) > 0 ||
+    (content.training_tracks?.length ?? 0) > 0 ||
+    (content.panels?.length ?? 0) > 0 ||
     !!content.nutrition ||
     !!content.gear;
 
   if (!hasAnything) return <p className="pg-empty">Content coming soon</p>;
+
+  const panelCount = content.panels?.length ?? 0;
 
   return (
     <>
@@ -484,6 +497,39 @@ function SectionContent({ content }: { content: PrepContent }) {
         </div>
       )}
 
+      {/* PANELS — first 2 side by side, remainder below in same 2-col grid */}
+      {panelCount > 0 && (() => {
+        const renderPanel = (panel: { heading: string; description?: string; items: { title: string; body: string }[] }, i: number) => (
+          <div key={i} className="pg-nut-panel">
+            <div className="pg-nut-panel-head">
+              <span className="pg-nut-panel-title">{panel.heading}</span>
+            </div>
+            {panel.description && (
+              <div className="pg-nut-panel-desc">{panel.description}</div>
+            )}
+            {panel.items.map((item, j) => (
+              <div key={j} className="pg-nut-item">
+                <span className="pg-nut-dot" />
+                <div>
+                  <div className="pg-nut-item-title">{item.title}</div>
+                  <div className="pg-nut-item-body">{item.body}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+        const top = content.panels!.slice(0, 2);
+        const bottom = content.panels!.slice(2);
+        return (
+          <>
+            <div className="pg-panels-top">{top.map((p, i) => renderPanel(p, i))}</div>
+            {bottom.length > 0 && (
+              <div className="pg-panels-bottom">{bottom.map((p, i) => renderPanel(p, i + 2))}</div>
+            )}
+          </>
+        );
+      })()}
+
       {/* CHECKLISTS */}
       {content.checklist?.map((group, i) => (
         <div key={i} className="pg-card" style={{ marginBottom: '1.25rem' }}>
@@ -506,33 +552,6 @@ function SectionContent({ content }: { content: PrepContent }) {
       ))}
 
       {/* RISKS */}
-      {/* PANELS */}
-{(content.panels?.length ?? 0) > 0 && (
-  <div className={content.panels!.length === 3 ? 'pg-three-col' : 'pg-two-col'}>
-    {content.panels!.map((panel, i) => (
-      <div key={i} className="pg-nut-panel">
-        <div className="pg-nut-panel-head">
-          <span className="pg-nut-panel-title">{panel.heading}</span>
-        </div>
-
-        {panel.items.map((item, j) => (
-          <div key={j} className="pg-nut-item">
-            <span className="pg-nut-dot" />
-            <div>
-              <div className="pg-nut-item-title">
-                {item.title}
-              </div>
-              <div className="pg-nut-item-body">
-                {item.body}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    ))}
-  </div>
-)}
-
       {(content.risks?.length ?? 0) > 0 && (
         <div style={{ marginBottom: '1.25rem' }}>
           <div className="pg-risks-label">⚠ Key risks to be aware of</div>
@@ -550,31 +569,20 @@ function SectionContent({ content }: { content: PrepContent }) {
         </div>
       )}
 
-      {/* TRAINING PLAN */}
- {/* TRAINING TRACKS (toggled) */}
+      {/* TRAINING TRACKS (toggled) */}
       {(content.training_tracks?.length ?? 0) > 0 && (
-        <TrainingTracksRenderer tracks={content.training_tracks!} trainingPlan={content.training_plan} />
+        <TrainingTracksRenderer
+          tracks={content.training_tracks!}
+          trainingPlan={content.training_plan}
+        />
       )}
 
-      {/* TRAINING PLAN (no tracks) */}
-      {!content.training_tracks && content.training_plan?.map((phase, i) => (
-        <div key={i} className="pg-phase">
-          <div className="pg-phase-header">
-            <div className="pg-phase-eyebrow">{phase.phase}</div>
-            <h3 className="pg-phase-title">{phase.title}</h3>
-            <p className="pg-phase-desc">{phase.description}</p>
-          </div>
-          {phase.days.map((day, j) => (
-            <div key={j} className="pg-day-row">
-              <span className="pg-day-label">{day.label}</span>
-              <div className="pg-day-content">
-                <div className="pg-day-activity">{day.activity}</div>
-                {day.note && <div className="pg-day-note">{day.note}</div>}
-              </div>
-            </div>
-          ))}
-        </div>
-      ))}
+      {/* TRAINING PLAN (standalone, no tracks) */}
+      {!content.training_tracks && (content.training_plan?.length ?? 0) > 0 &&
+        content.training_plan!.map((phase, i) => (
+          <TrainingPhaseBlock key={i} phase={phase} />
+        ))
+      }
 
       {/* NUTRITION */}
       {content.nutrition && (
@@ -602,16 +610,12 @@ function SectionContent({ content }: { content: PrepContent }) {
           {content.nutrition.snacks && (
             <div className="pg-snacks">
               <div className="pg-snacks-head">
-              
                 <span className="pg-snacks-title">Trail and high-camp snacks</span>
               </div>
               <p className="pg-snacks-intro">{content.nutrition.snacks.intro}</p>
               <div className="pg-snacks-grid">
                 {content.nutrition.snacks.items.map((item, i) => (
-                  <div key={i} className="pg-snack-chip">
-                   
-                    {item}
-                  </div>
+                  <div key={i} className="pg-snack-chip">{item}</div>
                 ))}
               </div>
             </div>
