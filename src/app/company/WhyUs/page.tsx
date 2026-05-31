@@ -23,24 +23,25 @@ const reasons = [
   },
   {
     id: 3,
-    title: 'Dedicated Medical Support & Physician Access',
+    title: 'Dedicated Medical Support',
     description:
-      'In the Himalayas, it is hard to find a doctor or a hospital. This is a problem. We are trying to fix this by giving people a way to get help when they need it, even when they are climbing high up in the mountains. The medical safety net we provide goes with you all the way to the top of the peaks.',
-    points: [
-      'Assigned Medical Liaison: As a client you will have access to a dedicated Medical Liaison professional during your journey, ready to assist whenever needed.',
-      'Safe Descent Protocols: If you feel unwell due to altitude or illness, we follow a clear “safety first” approach to bring you down to a safer altitude quickly and safely. We make sure you get to an altitude when your body needs it. Our Safe Descent Protocols are in place to help you so you can get the help you need and feel better.',
-    ],
+      'Our years of operational experience in the field have highlighted critical systemic deficiencies in remote Himalayan healthcare, particularly regarding the reliability of rural clinics and the availability of qualified physicians. To decisively mitigate these risks, we have engineered a sophisticated, remote medical oversight system that bridges the gap between high-altitude tracks and clinical expertise.',
+     points: [
+    "Daily Preemptive Health Screenings: Your assigned physician conducts mandatory daily clinical evaluations to monitor for early indicators of altitude illness, physical discomfort, or physiological stress. By assessing your vitals and well-being every 24 hours, we catch potential health complications before they escalate into emergencies.",
+    "Decisive Intervention Protocols: This continuous diagnostic safety net ensures that if any anomaly is detected, your remote doctor immediately coordinates with your field guide to implement targeted care or initiate a swift, structured descent.",
+    "Assigned Remote Medical Advisor: While a physician does not physically accompany the team on the trail, every client is paired with a dedicated medical doctor who provides continuous oversight from our central command."
+  ],
   },
   {
     id: 4,
-    title: 'Our Exclusive "3x3" Daily Safety Protocol',
+    title: 'Daily Safeguard',
     description:
-      'We use real-time health data to monitor your condition and ensure your safety.',
-    points: [
-      'The Morning Warm-up: Each day begins with light stretching and breathing exercises to prepare your body and improve oxygen intake. Before you start your day, our guide takes you through some yoga poses, like Yoga Asanas, to stretch your muscles. They also teach you Pranayama, which is just breathing exercises to help you get oxygen and increase your lung capacity. This is about getting your body ready for the day with Yoga Asanas and breathing exercises, like Pranayama.',
-      'We do Triple-Vitals Monitoring: We check your blood pressure and oxygen levels (SpO2) three times a day to track your health.',
-      'Headquarters Reporting: These readings are shared daily with our Kathmandu team, so we can identify and respond to any issues early. This way, we can see what is going on with the Headquarters data and catch any health issues with the Headquarters’ information before they become serious problems for the Headquarters.',
-    ],
+      'To ensure uncompromised well-being throughout the journey, we implement a meticulous, three-tiered daily assessment system that leverages real-time physiological data to actively monitor and preserve your health.  ',
+   points: [
+    "The Morning Conditioning Ritual: Every day commences with a deliberate sequence of targeted stretching and respiratory conditioning designed to optimize your body for exertion. Under the expert guidance of our team, you will engage in specific Yoga Asanas (physical postures) to enhance muscular elasticity, paired with Pranayama (regulated breathing techniques) to deliberately boost oxygenation and maximize lung capacity prior to hitting the trail.",
+    "Triple-Vitals Vigilance: To maintain an accurate trajectory of your physical acclimatization, our team conducts comprehensive vital sign assessments three times daily. This includes the precise tracking of blood pressure, heart rate, and oxygen saturation (SpO₂) levels to ensure your body is adapting seamlessly to the altitude.",
+    "Centralized Medical Liaison: These daily diagnostic metrics are systematically transmitted back to our Kathmandu headquarters. By maintaining this continuous data link with our central command team, we can immediately identify subtle physiological anomalies and intervene proactively long before any minor discomfort escalates into a serious medical concern."
+  ],
   },
   {
     id: 5,
@@ -52,16 +53,7 @@ const reasons = [
       'We also work closely with local communities and support responsible and sustainable tourism, helping preserve Nepal’s beauty for future generations.',
     ],
   },
-  {
-    id: 6,
-    title: 'Expert and Caring Guides',
-    description:
-      'Our guides are experienced, skilled, and truly care about your journey. They are not just guides; they are trained to support, motivate, and ensure your safety. They are also trained in basic medical care, so they can respond quickly if needed. This is why families feel comfortable and confident traveling with us.',
-    points: [
-      'Our guides are not just people who know a lot about trains. They really know how to deal with people. They have training to help with medical problems and to motivate the group. This means they can make a hike a really great experience that you will always remember.',
-      'Our guides are the reason why families feel good about going on an adventure with Mountain Travel Sobek. They trust our guides to take care of them. Families know that our guides will make sure they have time on their adventure with Mountain Travel Sobek.',
-    ],
-  },
+
 ];
 
 const stats = [
