@@ -103,7 +103,7 @@ export default function Nav() {
           {/* Slide-in panel */}
           <div className="header-mobile-menu">
 
-            <a href="/nepal" className="header-mobile-link" onClick={() => setMobileOpen(false)}>
+            <a href="/Nepal" className="header-mobile-link" onClick={() => setMobileOpen(false)}>
               Nepal
             </a>
 
