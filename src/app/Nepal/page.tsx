@@ -21,7 +21,7 @@ const treks = [
 
   { title: 'Upper Mustang Trek',                    duration: '17 Days', difficulty: 'Moderate',    image: '/assets/images/upperm1.jpeg',             href: '/Nepal/Treks/upper-mustang-trek-17-days' },
   { title: 'Upper Dolpo Trek',                      duration: '26 Days', difficulty: 'Strenuous',   image: '/assets/images/upperdolpo1.jpg',          href: '/Nepal/Treks/upper-dolpo-trek' },
-  { title: 'Dhaulagiri Circuit Trek',               duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/dhaulagiri1.jpg',          href: '/Nepal/Treks/dhualagiri-circuit-trek' },
+  { title: 'Dhaulagiri Circuit Trek',               duration: '21 Days', difficulty: 'Strenuous',   image: '/assets/images/dhaulagiri1.jpg',          href: '/Nepal/Treks/dhaulagiri-circuit-trek' },
 
   { title: 'Manaslu Circuit Trek',                  duration: '16 Days', difficulty: 'Strenuous',   image: '/assets/images/mc1.jpg',                  href: '/Nepal/Treks/manaslu-circuit-trek' },
   { title: 'Manaslu & Tsum Valley Trek',            duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/mtv1.jpg',                 href: '/Nepal/Treks/manaslu-tsum-valley-trek' },
@@ -32,7 +32,6 @@ const treks = [
   { title: 'Langtang Helambu Trek',                 duration: '18 Days', difficulty: 'Strenuous',   image: '/assets/images/lht1.jpeg',                href: '/Nepal/Treks/langtang-helambu-trek' },
 
   { title: 'Kanchenjunga Base Camp Trek (22 Days)', duration: '22 Days', difficulty: 'Strenuous',   image: '/assets/images/kbc1.jpg',                 href: '/Nepal/Treks/kanchenjunga-base-camp-trek-22-days' },
-  { title: 'Kanchenjunga Base Camp Trek (23 Days)', duration: '23 Days', difficulty: 'Strenuous',   image: '/assets/images/kbc2.jpg',                 href: '/Nepal/Treks/kanchenjunga-base-camp-trek-23-days' },
 ];
 
 const expeditions = [

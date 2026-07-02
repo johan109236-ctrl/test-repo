@@ -5,6 +5,7 @@ export const treks: Record<string, TrekData> = {
   'langtang-helambu-trek': {
     title: 'Langtang Helambu Trek',
     duration: '18 Days',
+    price:'2000USD',
     difficulty: 'Strenuous',
     elevation: '~4,610 m / 15,120 ft (Laurebinayak Pass)',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -69,6 +70,7 @@ export const treks: Record<string, TrekData> = {
   'mardi-himal-trek': {
     title: 'Mardi Himal Trek',
     duration: '11 Days',
+    price:'1350USD',
     difficulty: 'Technical challenge',
     elevation: '4,250 m / 13,944 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -140,6 +142,7 @@ itinerary: [
   'tsum-valley-trek': {
     title: 'Tsum Valley Trek',
     duration: '17 Days',
+    price:'2650USD',
     difficulty: 'Moderate to Strenuous',
     elevation: '3,700 m / 12,136 ft',
     season: 'October to November',
@@ -225,6 +228,7 @@ itinerary: [
   'gokyo-to-everest-base-camp-trek': {
     title: 'Gokyo to Everest Base Camp Trek',
     duration: '18 Days',
+    price:'2000USD',
     difficulty: 'Technical challenge',
     elevation: '5,550 m / 18,209 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -314,6 +318,7 @@ itinerary: [
   'kanchenjunga-base-camp-trek-23-days': {
     title: 'Kanchenjunga Base Camp Trek',
     duration: '23 Days',
+    price:'2980USD',
     difficulty: 'Strenuous / challenge',
     elevation: '5,143 m / 16,873 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -411,6 +416,7 @@ itinerary: [
   },
   'everest-three-passes-trek': {
     title: 'Everest Three Passes Trek',
+    price:'2500USD',
     duration: '21 Days',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,555 m / 18,225 ft',
@@ -506,6 +512,7 @@ itinerary: [
   'langtang-valley-trek': {
     title: 'Langtang Valley Trek',
     duration: '11 Days',
+    price:'1080USD',
     difficulty: 'Alpine Challenge',
     elevation: '4,984 m / 16,351 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -583,6 +590,7 @@ itinerary: [
   'ghorepani-poon-hill-trek-10-days': {
     title: 'Ghorepani Poon Hill Trek',
     duration: '10 Days',
+    price:'1000USD',
     difficulty: 'Strenuous/Moderate',
     elevation: '3,210 m / 10,531 ft',
     season: 'Feb-May, Sep-Dec',
@@ -655,6 +663,7 @@ itinerary: [
   'langtang-valley-ganja-la-pass-trek': {
     title: 'Langtang Valley & Ganja La Pass Trek',
     duration: '15 Days',
+    price:'3600USD',
     difficulty: 'Technical / challenge',
     elevation: '5,200 m / 17,056 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -736,6 +745,7 @@ itinerary: [
   'khopra-danda-trek': {
     title: 'Khopra Danda Trek',
     duration: '12 Days',
+    price:'1400USD',
     difficulty: 'Moderate',
     elevation: '3,660 m (Khopra Ridge) / 4,660 m (Optional Khayer Lake)',
     season: 'Mar-May, Sep-Dec',
@@ -801,6 +811,7 @@ itinerary: [
   'ghorepani-poon-hill-trek-10-days-duplicate': {
     title: 'Ghorepani Poon Hill Trek',
     duration: '10 Days',
+    price:'1000USD',
     difficulty: 'Moderate',
     elevation: '3,210 m / 10,531 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -855,6 +866,7 @@ itinerary: [
   'nar-phu-valley-annapurna-circuit-trek': {
     title: 'Nar Phu Valley Trek with Annapurna Circuit',
     duration: '18 Days',
+    price:'2800USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,416 m / 17,769 ft',
     season: 'Spring (March to May) & Autumn (Late September to November)',
@@ -927,6 +939,7 @@ itinerary: [
   'gokyo-lakes-trek': {
     title: 'Gokyo Lakes Trek',
     duration: '14 Days',
+    price:'1800USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,483 m / 17,988 ft',
     season: 'Mar-May, Sep-Nov',
@@ -995,6 +1008,7 @@ itinerary: [
   'manaslu-circuit-trek': {
     title: 'Manaslu Circuit Trek',
     duration: '16 Days',
+    price:'1890USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,106 m / 16,752 ft',
     season: 'Spring (March to May) & Autumn (Late September to November)',
@@ -1065,6 +1079,7 @@ itinerary: [
   'upper-dolpo-trek': {
     title: 'Upper Dolpo Trek',
     duration: '26 Days',
+    price:'3500USD',
     difficulty: 'Very Strenuous / Expedition-Style',
     elevation: '5,151 m / 16,899 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1144,6 +1159,7 @@ itinerary: [
   'annapurna-circuit-tilicho-lake-trek': {
     title: 'Annapurna Circuit with Tilicho Lake Trek',
     duration: '18 Days',
+    price:'2200USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,416 m / 17,769 ft',
     season: 'Spring (March to May) & Autumn (Late September to November)',
@@ -1216,6 +1232,7 @@ itinerary: [
   'everest-high-passes-island-peak': {
     title: 'Everest High Passes and Island Peak Expedition',
     duration: '24 Days',
+    price:'3950USD',
     difficulty: 'Technical challenge',
     elevation: '6,189 m / 20,305 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1292,6 +1309,7 @@ itinerary: [
   'manaslu-tsum-valley-trek': {
     title: 'Manaslu & Tsum Valley Trek',
     duration: '22 Days',
+    price:'2880USD',
     difficulty: 'Strenuous / challenge',
     elevation: '5,160 m / 16,929 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1358,6 +1376,7 @@ itinerary: [
   'upper-mustang-trek-drive-trek': {
     title: 'Upper Mustang Trek (Drive & Trek)',
     duration: '17 Days',
+    price:'3100USD',
     difficulty: 'Strenuous/Moderate',
     elevation: '3,880 m / 12,730 ft',
     season: 'Feb-Jun, Sep-Nov',
@@ -1427,13 +1446,14 @@ itinerary: [
   'dhaulagiri-circuit-trek': {
     title: 'Dhaulagiri Circuit Trek',
     duration: '21 Days',
+    price:'3600USD',
     difficulty: 'Extreme / Mountaineering Grade',
     elevation: '5,360 m / 17,580 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
     groupSize: '2 or more',
     activity: 'Trekking/Camping/Hiking',
     accommodation: 'Hotel, Guesthouse & Tented Camping',
-    heroImages: ['/assets/images/dhaulagiri1.jpg', '/assets/images/dhaulagiri2-pass.jpg', '/assets/images/dhaulagiri3.jpg'],
+    heroImages: ['/assets/images/dhaulagiri1.jpg', 'https://www.everesttrekkers.com/uploads/posts/Dhaulagiri-Circuit-1737616088.jpg', '/assets/images/dhaulagiri3.jpg'],
     breadcrumb: [
       { label: 'Nepal', href: '/Nepal' },
       { label: 'Treks', href: '/Nepal#trekking' },
@@ -1502,6 +1522,7 @@ itinerary: [
   'kanchenjunga-base-camp-trek-22-days': {
     title: 'Kanchenjunga Base Camp Trek',
     duration: '22 Days',
+    price:'2980USD',
     difficulty: 'Very Strenuous / Challenging',
     elevation: '5,143 m / 16,873 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1576,6 +1597,7 @@ itinerary: [
   'gokyo-renjo-la-pass-trek': {
     title: 'Gokyo and Renjo La Pass Trek',
     duration: '15 Days',
+    price:'1950USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,483 m / 17,988 ft',
     season: 'Mar-May, Sep-Nov',
@@ -1645,6 +1667,7 @@ itinerary: [
   'annapurna-base-camp-trek-14-days': {
     title: 'Annapurna Base Camp Trek',
     duration: '14 Days',
+    price:'1480USD',
     difficulty: 'Strenuous / challenge',
     elevation: '4,130 m / 13,550 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1713,6 +1736,7 @@ itinerary: [
   'annapurna-circuit-trek-16-days': {
     title: 'Annapurna Circuit Trek',
     duration: '16 Days',
+    price:'1800USD',
     difficulty: 'Strenuous / Challenging',
     elevation: '5,416 m / 17,769 ft',
     season: 'Feb, May - Sep, Dec',
@@ -1785,6 +1809,7 @@ itinerary: [
   'upper-mustang-trek-17-days': {
     title: 'Upper Mustang Trek (Drive & Trek)',
     duration: '17 Days',
+    price:'3100USD',
     difficulty: 'Strenuous / challenge',
     elevation: '3,810 m / 12,500 ft',
     season: 'Spring (March to May) & Autumn (September to November)',
@@ -1861,6 +1886,7 @@ itinerary: [
     season: 'Spring (March to May) & Autumn (Late September to November)',
     groupSize: '2 or more',
     activity: 'Trekking/Hiking',
+    price:'1600USD',
     accommodation: 'Tea House & Hotel',
     heroImages: ['/assets/images/everestbasecamp1.jpg', '/assets/images/everestbasecamp2.jpg', '/assets/images/everestbasecamp3.jpeg'],
     breadcrumb: [

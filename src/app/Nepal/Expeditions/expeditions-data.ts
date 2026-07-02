@@ -4,6 +4,7 @@ export const expeditions: Record<string, TrekData> = {
   'tent-peak-abc': {
     title: 'Tent Peak Climbing with Annapurna Base Camp',
     duration: '19 Days',
+    price:'2550USD',
     difficulty: 'Challenging / Alpine',
     elevation: '5,663 m / 18,579 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -67,6 +68,7 @@ export const expeditions: Record<string, TrekData> = {
   'everest-base-camp-lobuche-east': {
     title: 'Everest Base Camp & Lobuche East',
     duration: '19 Days',
+    price:'2900USD',
     difficulty: 'Challenging / Semi-Technical',
     elevation: '6,119 m / 20,070 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -131,6 +133,7 @@ export const expeditions: Record<string, TrekData> = {
   'pisang-peak': {
     title: 'Pisang Peak Climbing',
     duration: '15 Days',
+    price:'3000USD',
     difficulty: 'Challenging / Non-Technical',
     elevation: '6,091 m / 19,980 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -190,6 +193,7 @@ export const expeditions: Record<string, TrekData> = {
   'yala-peak': {
     title: 'Yala Peak Climbing',
     duration: '14 Days',
+    price:'2700USD',
     difficulty: 'Challenging',
     elevation: '5,500 m / 18,045 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -248,6 +252,7 @@ export const expeditions: Record<string, TrekData> = {
   'everest-high-passes-island-peak': {
     title: 'Everest High Passes & Island Peak',
     duration: '24 Days',
+    price:'3950USD',
     difficulty: 'Challenging / Semi-Technical',
     elevation: '6,187 m / 20,299 ft',
     season: 'Feb–Jun & Sep–Dec',
@@ -316,6 +321,7 @@ export const expeditions: Record<string, TrekData> = {
   'ama-dablam': {
     title: 'Ama Dablam Expedition',
     duration: '29 Days',
+    price:'9800USD',
     difficulty: 'Technical / Advanced',
     elevation: '6,812 m / 22,349 ft',
     season: 'Spring (Apr–May) & Autumn (Oct–Nov)',
@@ -375,6 +381,7 @@ export const expeditions: Record<string, TrekData> = {
   'mera-peak': {
     title: 'Mera Peak Climbing',
     duration: '20 Days',
+    price:'3150USD',
     difficulty: 'Challenging / Semi-Technical',
     elevation: '6,470 m / 21,227 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -439,6 +446,7 @@ export const expeditions: Record<string, TrekData> = {
   'pisang-peak-thorong-la': {
     title: 'Pisang Peak & Thorung La Pass',
     duration: '22 Days',
+    price:'3800USD',
     difficulty: 'Strenuous / Semi-Technical',
     elevation: '6,091 m / 19,980 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
@@ -506,6 +514,7 @@ export const expeditions: Record<string, TrekData> = {
   'island-peak': {
     title: 'Island Peak Climbing',
     duration: '16 Days',
+    price:'3000USD',
     difficulty: 'Challenging / Semi-Technical',
     elevation: '6,187 m / 20,293 ft',
     season: 'Spring (Mar–May) & Autumn (Sep–Nov)',
